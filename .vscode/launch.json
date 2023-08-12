@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "e:\\P3_Patel_Code\\Saas\\Index.html"
+            "name": "Open Index.html",
+            "file": "e:\\P3_Patel_Code\\OhmyFood\\Index.html"
         }
     ]
 }
