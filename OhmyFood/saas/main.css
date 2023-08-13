@@ -8,11 +8,25 @@ header {
 }
 
 body {
-  background-color: aqua;
+  background-color: #a0ff8d;
+}
+
+.Restaurants {
+  display: flex;
+  flex-direction: column;
+}
+
+.RestaurantsImages {
+  width: 100px;
+  height: 100px;
 }
 
 section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+footer {
+  background-color: rgba(26, 25, 25, 0.548);
 }/*# sourceMappingURL=main.css.map */
