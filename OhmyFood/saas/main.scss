@@ -1,5 +1,6 @@
 
 @import './variables';
+@import './resets';
 
 .Logo_img
 {
@@ -10,6 +11,7 @@
 header
 {
     background-color: rgb(252, 254, 255);
+    flex: 100%;
     flex:auto;
     display: flex;
     flex-direction: row;
@@ -20,14 +22,14 @@ header
 
 body
 {
-background-color: rgb(250, 249, 241);
+background:transparent;
 }
 
 .Section_Location
 {
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: rgb(250, 249, 241);
+    background-color: transparent;
 }
 
 .Section_2
@@ -37,8 +39,21 @@ background-color: rgb(250, 249, 241);
     align-items: center;
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: rgba(250, 249, 241, 0.527)
+    background-color:rgba(250, 249, 241, 0.692)
    
+}
+
+.Nav
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header_1
@@ -97,18 +112,44 @@ background-color: rgb(250, 249, 241);
     
 }
 
+.RestaurantsCards
+{
+    width:200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+    border: white 2px;
+    border-radius: 10px;
+}
+
+
  .Restaurants
  {
     display: flex;
     flex-direction:column;
+    justify-content: center;
+    align-items: center;
  }
 
 .RestaurantsImages
 {
-    
-    width: 100px;
-    height: 100px;
+  
+width: max-content;
+height: max-content;    
+
 }
+
+.Rest_images
+{
+height:200px;
+width: 300px;
+object-fit: cover;
+
+}
+
+
 
 section
 {
