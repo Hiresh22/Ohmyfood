@@ -2,27 +2,40 @@
 @import './variables';
 @import './resets';
 
-.Logo_img
+
+main
 {
- width:50%;
-    object-fit: cover;
+    
+    width: 80%;
+    margin: auto;
+    
+    &_header
+            {
+                background-color: rgb(252, 254, 255);
+                flex: 100%;
+                flex:auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+                &_LogoImg
+                   {
+                      width:50%;
+                        object-fit: cover;
+                        background-color: $Primary;
+                   }
+            }
+
 }
 
-header
-{
-    background-color: rgb(252, 254, 255);
-    flex: 100%;
-    flex:auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-}
+
+
 
 body
 {
-background:transparent;
+    background-color: rgb(153, 25, 35);
+
 }
 
 .Section_Location
