@@ -9,21 +9,22 @@ main
     width: 80%;
     margin: auto;
     
-    &_header
+    header
             {
                 background-color: rgb(252, 254, 255);
-                flex: 100%;
+                width: 100%;
                 flex:auto;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 
-                &_LogoImg
+                .LogoImg
                    {
-                      width:50%;
+                      width:20%;
+                      height:max-content;
                         object-fit: cover;
-                        background-color: $Primary;
+                       
                    }
             }
 

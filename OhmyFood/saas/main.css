@@ -8,20 +8,21 @@ main {
   width: 80%;
   margin: auto;
 }
-main_header {
+main header {
   background-color: rgb(252, 254, 255);
-  flex: 100%;
+  width: 100%;
   flex: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-main_header_LogoImg {
-  width: 50%;
+main header .LogoImg {
+  width: 20%;
+  height: -moz-max-content;
+  height: max-content;
   -o-object-fit: cover;
      object-fit: cover;
-  background-color: #9356DC;
 }
 
 body {
