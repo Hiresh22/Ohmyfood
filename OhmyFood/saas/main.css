@@ -51,22 +51,97 @@ main .Nav .navLinks {
 main .Nav .navResturant {
   width: 100%;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #F1F1F1;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .Nav .navResturant .divNavIconText {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .Nav .navResturant .divNavIconText .navIconPadding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .Nav .navResturant .circleIcon {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #9356DC;
+  border-radius: 10px;
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 main .Nav .navMenu {
   width: 100%;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #F1F1F1;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .Nav .navMenu .divNavIconText {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .Nav .navMenu .divNavIconText .navIconPadding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .Nav .navMenu .circleIcon {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #9356DC;
+  border-radius: 10px;
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 main .Nav .navEnjoyatResturant {
   width: 100%;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #F1F1F1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .Nav .navEnjoyatResturant .divNavIconText {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .Nav .navEnjoyatResturant .divNavIconText .navIconPadding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .Nav .navEnjoyatResturant .circleIcon {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #9356DC;
+  border-radius: 10px;
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 main .Section2 {
   display: flex;
@@ -108,6 +183,10 @@ main .Restaurants {
   height: auto;
   background-color: #F1F1F1;
   border: 2px solid white;
+}
+main .Restaurants .divTextRestuarants {
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 main .Restaurants .RestaurantsCards {
   width: 300px;

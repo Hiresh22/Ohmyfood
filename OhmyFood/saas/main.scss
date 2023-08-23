@@ -9,6 +9,21 @@
                 justify-content: center;
                 align-items: center;
     }
+
+  @mixin circleIcon
+  {
+    height:15px;
+    width: 15px;
+    border:1px solid $Primary;
+    border-radius:10px;
+    background-color: $Primary;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     align-items: center;
+
+  }  
     
 
     header
@@ -50,7 +65,8 @@ main
                 padding-bottom: 20px;
                 padding-right: 10px;
                 padding-left: 10px;
-            
+
+                           
               .navText
                 {
                    
@@ -65,24 +81,87 @@ main
                         {
                             width: 100%;
                             height: 80px;
-                            border-radius: 10px;
+                            border-radius: 30px;
                             background-color: $MenuBackgourdColor;
                             margin-bottom: 15px;
+                            display: flex;
+                            flex-direction:row;
+                            align-items: center;
+                             .divNavIconText
+                             {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content:flex-start;
+                                align-items: center;
+                                .navIconPadding
+                                 {
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                  }
+                             }
+                            
+
+                            .circleIcon
+                            {
+                               
+                                 @include  circleIcon;
+                            }
                         }
                         .navMenu
                             {
                                 width: 100%;
                                 height: 80px;
-                                border-radius: 10px;
+                                border-radius: 30px;
                                 background-color: $MenuBackgourdColor;
                                 margin-bottom: 15px;
+                                display: flex;
+                            flex-direction:row;
+                            align-items: center;
+                            .divNavIconText
+                             {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content:flex-start;
+                                align-items: center;
+                                .navIconPadding
+                                 {
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                  }
+                             }
+                                .circleIcon
+                                {
+                                   
+                                     @include  circleIcon;
+                                }
                             }
                             .navEnjoyatResturant
                                 {
                                     width: 100%;
                                     height: 80px;
-                                    border-radius: 10px;
+                                    border-radius: 30px;
                                     background-color: $MenuBackgourdColor;
+                                    display: flex;
+                                    flex-direction:row;
+                                    align-items: center;
+                            .divNavIconText
+                             {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content:flex-start;
+                                align-items: center;
+                                .navIconPadding
+                                 {
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                  }
+                             }
+
+                                    .circleIcon
+                                    {
+                                       
+                                         @include  circleIcon;
+                                    }
                                 }
             }
 
@@ -133,6 +212,12 @@ main
                            height:auto;
                            background-color:$backgoundSection2;
                            border: 2px solid white;
+
+                           .divTextRestuarants
+                           {
+                            padding-top: 25px;
+                            padding-bottom:15px;
+                           }
 
                            .RestaurantsCards
                           {
