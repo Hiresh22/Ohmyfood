@@ -4,29 +4,145 @@
   padding: 0px;
 }
 
-main {
+header {
+  background-color: rgb(252, 254, 255);
   width: 80%;
   margin: auto;
-}
-main header {
-  background-color: rgb(252, 254, 255);
-  width: 100%;
   flex: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-main header .LogoImg {
-  width: 20%;
-  height: -moz-max-content;
-  height: max-content;
+header .LogoImg {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+main {
+  width: 80%;
+  margin: auto;
+}
+main .Nav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+main .Nav .navText {
+  margin-bottom: 15px;
+}
+main .Nav .navLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .Nav .navResturant {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+  margin-bottom: 15px;
+}
+main .Nav .navMenu {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+  margin-bottom: 15px;
+}
+main .Nav .navEnjoyatResturant {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+}
+main .Section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  border: 2px solid white;
+  background-color: #F1F1F1;
+}
+main .Section2 .ExploreRestaurants {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF79DA;
+  margin-bottom: 15px;
+  color: white;
+}
+main .Section2 .ExploreRestaurants:hover {
+  color: #9356DC;
+}
+main .Section2 .header_1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+main .Section2 .header_2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+main .Restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #F1F1F1;
+  border: 2px solid white;
+}
+main .Restaurants .RestaurantsCards {
+  width: 300px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  background-color: #9356DC;
+  border: white 2px;
+  border-radius: 10px;
+}
+main .Restaurants .RestaurantsCards .RestaurantsImages {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+main .Restaurants .RestaurantsCards .RestaurantsImages .Rest_images {
+  height: 200px;
+  width: -moz-max-content;
+  width: max-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 body {
-  background-color: rgb(153, 25, 35);
+  background-color: #F2F2F2;
+}
+
+.footer {
+  width: 80%;
+  margin: auto;
 }
 
 .Section_Location {
@@ -35,101 +151,8 @@ body {
   background-color: transparent;
 }
 
-.Section_2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  background-color: rgba(250, 249, 241, 0.692);
-}
-
-.Nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header_1 {
-  margin-bottom: 15px;
-}
-
-.header_2 {
-  margin-bottom: 15px;
-}
-
 .Location {
   margin-left: 15px;
-}
-
-.Explore_Restaurants {
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FF79DA;
-  color: white;
-}
-
-.navigation_Resturant {
-  width: 300px;
-  height: 80px;
-  border-radius: 10px;
-  background-color: gray;
-  margin-bottom: 15px;
-}
-
-.navigation_Menu {
-  width: 300px;
-  height: 80px;
-  border-radius: 10px;
-  background-color: gray;
-  margin-bottom: 15px;
-}
-
-.navigation_Enjo_Resturant {
-  width: 300px;
-  height: 80px;
-  border-radius: 10px;
-  background-color: gray;
-}
-
-.RestaurantsCards {
-  width: 200px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  border: white 2px;
-  border-radius: 10px;
-}
-
-.Restaurants {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.RestaurantsImages {
-  width: -moz-max-content;
-  width: max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.Rest_images {
-  height: 200px;
-  width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 section {
