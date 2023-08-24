@@ -29,7 +29,7 @@
     header
             {
                 background-color: rgb(252, 254, 255);
-                width: 80%;
+                width: 375px;
                 margin:auto;
                 flex:auto;
                 @include flexBox(row,center,center);
@@ -51,7 +51,7 @@
 main
 {
     
-    width: 80%;
+    width: 375px;
     margin: auto;
     
     
@@ -72,12 +72,12 @@ main
                         }
                     .navLinks
                         {
-                            @include flexBox(row,space-between,flex-start);
+                            @include flexBox(column,space-between,flex-start);
                             flex-wrap: wrap;
                     
                                 .navResturant
                                     {   
-                                        width:33%;
+                                        width:100%;
                                         height: 80px;
                                         border-radius: 30px;
                                         background-color: $MenuBackgourdColor;
@@ -108,7 +108,7 @@ main
                                     }
                             .navMenu
                             {
-                                width:33%;
+                                width:100%;
                                 height: 80px;
                                 border-radius: 30px;
                                 background-color: $MenuBackgourdColor;
@@ -116,6 +116,10 @@ main
                                 display: flex;
                             flex-direction:row;
                             align-items: center;
+                            &:hover
+                                            {
+                                                background-color: #dfcce7;
+                                            }
                             .divNavIconText
                              {
                                 display: flex;
@@ -136,13 +140,17 @@ main
                             }
                             .navEnjoyatResturant
                                 {
-                                    width:33%;
+                                    width:100%;
                                     height: 80px;
                                     border-radius: 30px;
                                     background-color: $MenuBackgourdColor;
                                     display: flex;
                                     flex-direction:row;
                                     align-items: center;
+                                    &:hover
+                                            {
+                                                background-color: #dfcce7;
+                                            }
                                     .divNavIconText
                                     {
                                         display: flex;
@@ -229,39 +237,63 @@ main
                            .ContainerRestaurantsCards
                            {
 
-                            @include flexBox(row,space-between,flex-start);
+                            @include flexBox(column,space-between,flex-start);
 
                             flex-wrap: wrap;
                                                    
 
                            .RestaurantsCards
                           {
-                                width:300px;
-                                height: 260px;
+                                width:340px;
+                                height: 230px;
                                 display: flex;
                                 flex-direction: column;
                                 flex-wrap: wrap;
                                 margin-bottom: 10px;
-                                background-color: $Primary;
+                                background-color:white;
                                 border: white 2px;
                                 border-radius: 10px;
 
                         .RestaurantsImages
                         {
                           
-                        width: max-content;
+                        width: 100%;
                         height: max-content;    
                         
                         .Rest_images
                        {
-                       height:200px;
-                       width:max-content;
+                       height:180px;
+                       width:340px;
                        object-fit: cover;
                        border-top-left-radius: 10px;
                        border-top-right-radius: 10px;
                        
                        }
 
+                        }
+
+                        .RestaurantsText
+                        {
+                            display: flex;
+                            flex-direction: row;
+                            
+                            .innerRestaurantsText
+                            {
+                                flex: 70%;
+                                padding-left: 5px;
+                                padding-right: 5px;
+                                display: flex;
+                                flex-direction:column;
+                            }
+                            .innerRestaurantsIcons
+                            {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                padding-right: 5px;
+                                
+                            }
                         }
                         
                         }
@@ -287,7 +319,7 @@ body
 
 .footer
 {
-    width: 80%;
+    width: 375px;
     margin: auto;
 }
 

@@ -6,7 +6,7 @@
 
 header {
   background-color: rgb(252, 254, 255);
-  width: 80%;
+  width: 375px;
   margin: auto;
   flex: auto;
   display: flex;
@@ -26,7 +26,7 @@ header .LogoImg {
 }
 
 main {
-  width: 80%;
+  width: 375px;
   margin: auto;
 }
 main .Nav {
@@ -43,13 +43,13 @@ main .Nav .navText {
 }
 main .Nav .navLinks {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 main .Nav .navLinks .navResturant {
-  width: 33%;
+  width: 100%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -84,7 +84,7 @@ main .Nav .navLinks .navResturant .circleIcon {
   align-items: center;
 }
 main .Nav .navLinks .navMenu {
-  width: 33%;
+  width: 100%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -92,6 +92,9 @@ main .Nav .navLinks .navMenu {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+main .Nav .navLinks .navMenu:hover {
+  background-color: #dfcce7;
 }
 main .Nav .navLinks .navMenu .divNavIconText {
   display: flex;
@@ -116,13 +119,16 @@ main .Nav .navLinks .navMenu .circleIcon {
   align-items: center;
 }
 main .Nav .navLinks .navEnjoyatResturant {
-  width: 33%;
+  width: 100%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+main .Nav .navLinks .navEnjoyatResturant:hover {
+  background-color: #dfcce7;
 }
 main .Nav .navLinks .navEnjoyatResturant .divNavIconText {
   display: flex;
@@ -197,36 +203,52 @@ main .Restaurants .divTextRestuarants {
 }
 main .Restaurants .ContainerRestaurantsCards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
-  width: 300px;
-  height: 260px;
+  width: 340px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  background-color: #9356DC;
+  background-color: white;
   border: white 2px;
   border-radius: 10px;
 }
 main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages {
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -moz-max-content;
   height: max-content;
 }
 main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .Rest_images {
-  height: 200px;
-  width: -moz-max-content;
-  width: max-content;
+  height: 180px;
+  width: 340px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText {
+  display: flex;
+  flex-direction: row;
+}
+main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsText {
+  flex: 70%;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
 }
 
 body {
@@ -234,7 +256,7 @@ body {
 }
 
 .footer {
-  width: 80%;
+  width: 375px;
   margin: auto;
 }
 
