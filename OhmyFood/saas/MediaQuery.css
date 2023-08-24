@@ -12,4 +12,42 @@
                 width: 100%
 
             }
+            main .Nav .navLinks
+            {
+                display: flex;
+                flex-direction:column;
+                height: auto;
+               
+            }
+
+            main .Nav .navLinks .navResturant
+            {
+                width:100%;
+
+            }
+            main .Nav .navLinks .navMenu{
+                width:100%;
+
+            }
+
+            main .Nav .navLinks .navEnjoyatResturant
+            {
+                width:100%;
+            }
+
+            main .Section2 .ExploreRestaurants:hover {
+                color: black;
+                background-color: #9356DC;
+              }
+
+            main .Nav .navLinks .navResturant:hover {
+                background-color: #dfcce7;
+              }
+
+            .ContainerRestaurantsCards
+            {
+                flex-direction: column;
+            }
+
+
 }

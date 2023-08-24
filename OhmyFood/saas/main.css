@@ -43,13 +43,13 @@ main .Nav .navText {
 }
 main .Nav .navLinks {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
-main .Nav .navResturant {
-  width: 100%;
+main .Nav .navLinks .navResturant {
+  width: 33%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -58,17 +58,20 @@ main .Nav .navResturant {
   flex-direction: row;
   align-items: center;
 }
-main .Nav .navResturant .divNavIconText {
+main .Nav .navLinks .navResturant:hover {
+  background-color: #dfcce7;
+}
+main .Nav .navLinks .navResturant .divNavIconText {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-main .Nav .navResturant .divNavIconText .navIconPadding {
+main .Nav .navLinks .navResturant .divNavIconText .navIconPadding {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .Nav .navResturant .circleIcon {
+main .Nav .navLinks .navResturant .circleIcon {
   height: 15px;
   width: 15px;
   border: 1px solid #9356DC;
@@ -80,8 +83,8 @@ main .Nav .navResturant .circleIcon {
   justify-content: center;
   align-items: center;
 }
-main .Nav .navMenu {
-  width: 100%;
+main .Nav .navLinks .navMenu {
+  width: 33%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -90,17 +93,17 @@ main .Nav .navMenu {
   flex-direction: row;
   align-items: center;
 }
-main .Nav .navMenu .divNavIconText {
+main .Nav .navLinks .navMenu .divNavIconText {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-main .Nav .navMenu .divNavIconText .navIconPadding {
+main .Nav .navLinks .navMenu .divNavIconText .navIconPadding {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .Nav .navMenu .circleIcon {
+main .Nav .navLinks .navMenu .circleIcon {
   height: 15px;
   width: 15px;
   border: 1px solid #9356DC;
@@ -112,8 +115,8 @@ main .Nav .navMenu .circleIcon {
   justify-content: center;
   align-items: center;
 }
-main .Nav .navEnjoyatResturant {
-  width: 100%;
+main .Nav .navLinks .navEnjoyatResturant {
+  width: 33%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -121,17 +124,17 @@ main .Nav .navEnjoyatResturant {
   flex-direction: row;
   align-items: center;
 }
-main .Nav .navEnjoyatResturant .divNavIconText {
+main .Nav .navLinks .navEnjoyatResturant .divNavIconText {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-main .Nav .navEnjoyatResturant .divNavIconText .navIconPadding {
+main .Nav .navLinks .navEnjoyatResturant .divNavIconText .navIconPadding {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .Nav .navEnjoyatResturant .circleIcon {
+main .Nav .navLinks .navEnjoyatResturant .circleIcon {
   height: 15px;
   width: 15px;
   border: 1px solid #9356DC;
@@ -163,9 +166,11 @@ main .Section2 .ExploreRestaurants {
   background-color: #FF79DA;
   margin-bottom: 15px;
   color: white;
+  transition: 1s ease-in-out;
 }
 main .Section2 .ExploreRestaurants:hover {
-  color: #9356DC;
+  color: black;
+  background-color: #9356DC;
 }
 main .Section2 .header_1 {
   margin-top: 15px;
@@ -178,17 +183,26 @@ main .Section2 .header_2 {
 main .Restaurants {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: auto;
   background-color: #F1F1F1;
   border: 2px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 main .Restaurants .divTextRestuarants {
   padding-top: 25px;
   padding-bottom: 15px;
 }
-main .Restaurants .RestaurantsCards {
+main .Restaurants .ContainerRestaurantsCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
   width: 300px;
   height: 260px;
   display: flex;
@@ -199,13 +213,13 @@ main .Restaurants .RestaurantsCards {
   border: white 2px;
   border-radius: 10px;
 }
-main .Restaurants .RestaurantsCards .RestaurantsImages {
+main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages {
   width: -moz-max-content;
   width: max-content;
   height: -moz-max-content;
   height: max-content;
 }
-main .Restaurants .RestaurantsCards .RestaurantsImages .Rest_images {
+main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .Rest_images {
   height: 200px;
   width: -moz-max-content;
   width: max-content;
