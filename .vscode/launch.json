@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open Index.html",
-            "file": "e:\\P3_Patel_Code\\OhmyFood\\Index.html"
+            "file": "e:\\P3_Patel_Code\\Index.html"
         }
     ]
 }
