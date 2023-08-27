@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+header {
+  background-color: rgb(252, 254, 255);
+  width: 375px;
+  margin: auto;
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .LogoImg {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 70%;
+  object-fit: cover;
+}
+
+main {
+  width: 375px;
+  margin: auto;
+}
+main .RestaurantsImages .Rest_images {
+  width: 100%;
+}
+main .MenuMainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .MenuMainContainer .MenuBasille {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+main .MenuMainContainer .MenuBasille .MenuBasilleText {
+  padding-left: 20px;
+  width: 70%;
+}
+main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+main .MenuMainContainer .MenuEntrees {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main .MenuMainContainer .MenuEntrees .childMenuEntreesText {
+  color: red;
+}
+main .MenuMainContainer .MenuEntrees .childMenuEntreesList {
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer {
+  background-color: rgba(14, 13, 13, 0.829);
+  color: white;
+  width: 375px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=menu.css.map */

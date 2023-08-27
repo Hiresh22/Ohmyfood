@@ -1,0 +1,11 @@
+{
+  "name": "p3_patel_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./saas/menu.scss:./saas/menu.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

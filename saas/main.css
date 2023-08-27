@@ -21,8 +21,7 @@ header .LogoImg {
   margin-top: 10px;
   margin-bottom: 10px;
   height: 70%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 main {
@@ -221,14 +220,12 @@ main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
 }
 main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages {
   width: 100%;
-  height: -moz-max-content;
   height: max-content;
 }
 main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .Rest_images {
   height: 180px;
   width: 340px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -237,7 +234,7 @@ main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText 
   flex-direction: row;
 }
 main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsText {
-  flex: 70%;
+  width: 70%;
   padding-left: 5px;
   padding-right: 5px;
   display: flex;
@@ -248,7 +245,7 @@ main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 body {
@@ -279,4 +276,6 @@ section {
 footer {
   background-color: rgba(26, 25, 25, 0.548);
   color: white;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

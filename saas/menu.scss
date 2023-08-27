@@ -1,0 +1,120 @@
+@import './variables';
+@import './resets';
+
+
+@mixin flexBox($direction,$justifyContent,$alignitem)
+ {
+                display: flex;
+                flex-direction: $direction;
+                justify-content:$justifyContent;
+                align-items:$alignitem;
+    }
+
+
+    
+body
+{
+    background-color:$backgound;
+
+}
+
+header{
+              
+    background-color: rgb(252, 254, 255);
+    width: 375px;
+    margin:auto;
+    flex:auto;
+    @include flexBox(row,center,center);
+    
+    .LogoImg
+       {
+          width:60%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          height:70%;
+            object-fit: cover;
+           
+       }
+}
+
+
+main
+{
+    
+    width: 375px;
+    margin: auto;
+    
+   .RestaurantsImages
+   {
+    .Rest_images
+    {
+       width:100%;
+    }
+   }
+
+     .MenuMainContainer{
+        width:100%;
+        @include flexBox(column,center,center);
+         .MenuBasille
+         {
+            width: 100%;
+           display: flex;
+           flex-direction: row; 
+               .MenuBasilleText{
+                padding-left: 20px;
+                   width: 70%;
+                }   
+                .MenuBasilleHertIcon{
+                    width: 30%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    padding-right: 20px;
+                }
+         }
+
+         .MenuEntrees{
+            width:100%;
+            @include flexBox(column,flex-start,null);
+                    .childMenuEntreesText{
+                     color:red;
+                    }
+                    .childMenuEntreesList{
+                        width: 100%;
+                        background-color: white ;
+                        height: 60px;
+                        border-radius: 15px;
+                        margin-bottom: 15px;
+                        @include flexBox(column,flex-start,null);
+                               .MenuEntreesList1{
+                                height: 100%;
+                                @include flexBox(row,flex-start,null);
+                                   .MenuEntreesList1Text{
+                                     width: 70%;
+                                      
+                                     @include flexBox(column,center,flex-start);
+                                   }
+
+                                   .MenuEntreesList1Price
+                                   {
+                                    width: 70%;
+                                    
+                                    @include flexBox(column,center,flex-end);
+                                   }
+
+                               }
+                    }
+         } 
+
+     }
+}
+
+.footer
+{
+    background-color:$footerBackGroundColor;
+    color: $footerTextColor;
+    width: 375px;
+    margin: auto;
+}

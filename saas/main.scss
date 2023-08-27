@@ -10,6 +10,7 @@
                 align-items:$alignitem;
     }
 
+
   @mixin circleIcon
   {
     height:15px;
@@ -28,6 +29,7 @@
 
     header
             {
+              
                 background-color: rgb(252, 254, 255);
                 width: 375px;
                 margin:auto;
@@ -321,6 +323,8 @@ body
 {
     width: 375px;
     margin: auto;
+    background-color:$footerBackGroundColor;
+    color: $footerTextColo;
 }
 
 .Section_Location
@@ -329,11 +333,6 @@ body
     margin-bottom: 15px;
     background-color: transparent;
 }
-
-
-
-
-
 
 
 
@@ -347,30 +346,7 @@ body
 
 
 
- 
 
-
-
-
-
-
-
-
-
-
-section
-{
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-footer
-{
-    background-color:$footer;
-    color: white;
-
-}
 
 
 
