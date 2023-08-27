@@ -56,6 +56,12 @@ main
     width: 375px;
     margin: auto;
     
+    .Section_Location
+    {   @include flexBox(row,center,center);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: transparent;
+    }
     
 
             .Nav
@@ -236,8 +242,7 @@ main
                             
                            }
                          
-                           .ContainerRestaurantsCards
-                           {
+                 .ContainerRestaurantsCards{
 
                             @include flexBox(column,space-between,flex-start);
 
@@ -248,57 +253,48 @@ main
                           {
                                 width:340px;
                                 height: 230px;
-                                display: flex;
-                                flex-direction: column;
-                                flex-wrap: wrap;
+                                @include flexBox(column,null,null);
                                 margin-bottom: 10px;
                                 background-color:white;
                                 border: white 2px;
                                 border-radius: 10px;
 
-                        .RestaurantsImages
-                        {
-                          
-                        width: 100%;
-                        height: max-content;    
+                                        .RestaurantsImages{
+                                                
+                                                width: 100%;
+                                                height: max-content;    
                         
-                        .Rest_images
-                       {
-                       height:180px;
-                       width:340px;
-                       object-fit: cover;
-                       border-top-left-radius: 10px;
-                       border-top-right-radius: 10px;
-                       
-                       }
+                                                        .Rest_images
+                                                    {
+                                                    height:180px;
+                                                    width:340px;
+                                                    object-fit: cover;
+                                                    border-top-left-radius: 10px;
+                                                    border-top-right-radius: 10px;
+                                                    
+                                                    }
 
-                        }
+                                             }
 
-                        .RestaurantsText
-                        {
-                            display: flex;
-                            flex-direction: row;
-                            
-                            .innerRestaurantsText
-                            {
-                                width: 70%;
-                                padding-left: 5px;
-                                padding-right: 5px;
-                                display: flex;
-                                flex-direction:column;
-                            }
-                            .innerRestaurantsIcons
-                            {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                padding-right: 10px;
-                                
-                            }
-                        }
+                                .RestaurantsText {
+                                    @include flexBox(row,null,null);
+                                    flex-wrap: wrap;
+                                        .innerRestaurantsText{
+                                                    width: 70%;
+                                                    padding-left: 5px;
+                                                    padding-right: 5px;
+                                                    @include flexBox(column,center,flex-start);
+                                                    flex-wrap: wrap;
+                                                    
+                                        }
+                                        .innerRestaurantsIcons{
+                                            width: 30%;
+                                            @include flexBox(column,center,flex-end);
+                                            padding-right: 10px;
+                                        }
+                                }
                         
-                        }
+                            }
                     }
                        
                       
@@ -324,15 +320,12 @@ body
     width: 375px;
     margin: auto;
     background-color:$footerBackGroundColor;
-    color: $footerTextColo;
+    color:$footerTextColor;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.Section_Location
-{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: transparent;
-}
 
 
 
