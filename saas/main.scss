@@ -199,15 +199,19 @@ main
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color:$Secondary;
+                        background-color:$Primary;
                         margin-bottom:15px;
                         color: white;
-                        transition: 1s ease-in-out;
+                        
+                        
                         
                         &:hover
                           {
                             color:black;
-                            background-color:$Primary;
+                            animation-name: buttonColor;
+                            animation-duration:4s;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate;
                            
                           }         
                     }
@@ -307,7 +311,13 @@ main
 }
 
 
-
+@keyframes buttonColor {
+    
+    100%{
+        background-color:#FF79DA;
+    }
+    
+}
 
 body
 {

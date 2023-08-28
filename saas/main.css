@@ -177,14 +177,16 @@ main .Section2 .ExploreRestaurants {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FF79DA;
+  background-color: #9356DC;
   margin-bottom: 15px;
   color: white;
-  transition: 1s ease-in-out;
 }
 main .Section2 .ExploreRestaurants:hover {
   color: black;
-  background-color: #9356DC;
+  animation-name: buttonColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 main .Section2 .header_1 {
   margin-top: 15px;
@@ -261,6 +263,11 @@ main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText 
   padding-right: 10px;
 }
 
+@keyframes buttonColor {
+  100% {
+    background-color: #FF79DA;
+  }
+}
 body {
   background-color: #F2F2F2;
 }

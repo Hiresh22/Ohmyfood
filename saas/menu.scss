@@ -113,12 +113,37 @@ main
 
                                    .MenuEntreesList1Price
                                    {
-                                    width: 70%;
+                                    width: 30%;
+                                    margin-right: 15px;
+                                    @include flexBox(row,flex-end,center);
                                     
-                                    @include flexBox(column,center,flex-end);
+                                    
+
                                    }
+                                   .menuCheckmark
+                                    {   visibility: hidden;
+                                        display: none;
+                                        height: 100%;
+                                        width: 50px;
+                                        background-color: $menuHoverColor;
+                                        transition: .3s ease;
+                                    }
 
                                }
+
+                               &:hover {
+                                .menuCheckmark{
+                                    visibility: visible;
+                                     display: inline;
+                                     display: flex;
+                                     flex-direction: column;
+                                     justify-content: center;
+                                     align-items: center;
+                                     margin-left:10px;
+                                transition: translate(-40px);
+                                
+                                }
+                              }
                     }
          } 
 
