@@ -97,15 +97,17 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 {
   justify-content: flex-start;
 }
 main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text {
-  width: 70%;
+  width: 80%;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
-  width: 30%;
-  margin-right: 15px;
+  width: 20%;
+  position: relative;
+  display: inline;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -114,10 +116,13 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .Me
 main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .menuCheckmark {
   visibility: hidden;
   display: none;
+  position: relative;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   height: 100%;
   width: 50px;
   background-color: #99E2D0;
-  transition: 0.3s ease;
+  transition: 2s ease;
 }
 main .MenuMainContainer .MenuEntrees .childMenuEntreesList:hover .menuCheckmark {
   visibility: visible;
@@ -127,7 +132,19 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList:hover .menuCheckmark 
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-  transition: translate(-40px);
+  animation-duration: 2s;
+  animation-name: MenuHoverTransition;
+}
+main .MenuMainContainer .MenuBasilleButton {
+  width: 130px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  margin-bottom: 15px;
+  color: white;
 }
 
 .footer {
@@ -135,6 +152,15 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList:hover .menuCheckmark 
   color: white;
   width: 375px;
   margin: auto;
+}
+
+@keyframes MenuHoverTransition {
+  0% {
+    transform: translateX(0, 0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
