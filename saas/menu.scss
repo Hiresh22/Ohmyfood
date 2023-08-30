@@ -113,7 +113,7 @@ main
 
                                    .MenuEntreesList1Price
                                    {
-                                    width: 20%;
+                                    width: 30%;
                                     position: relative;
                                     display: inline;
                                    
@@ -130,9 +130,12 @@ main
                                         border-top-right-radius: 15px;
                                         border-bottom-right-radius: 15px;
                                         height: 100%;
-                                        width: 50px;
+                                        width: 80px;
                                         background-color: $menuHoverColor;
-                                        transition: 2s ease;
+                                        transform-origin: right 50%;
+                                        animation-name:MenuHoverTransition;
+                                        animation-duration: 1000ms;   
+
                                     }
 
                                }
@@ -146,8 +149,11 @@ main
                                      justify-content: center;
                                      align-items: center;
                                      margin-left:10px;
-                                     animation-duration: 2s;                 
-                                     animation-name:MenuHoverTransition;
+                                                 
+                                     .fa-check{
+                                            transition-duration: 1s;
+                                            transform: rotate(360deg);
+                                         }  
                                 
                                 }
                               }
@@ -179,8 +185,9 @@ main
 
 @keyframes MenuHoverTransition {
     0%{ 
-        transform: translateX(0,0);}
-    100%{transform:translateX(-10px);
-         
-               }   
+        transform:ScaleX(0);}
+
+    100%{
+        transform:ScaleX(1);
+    }   
    }
