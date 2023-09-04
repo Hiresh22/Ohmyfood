@@ -109,6 +109,9 @@ main
                                      width: 80%;
                                      margin-left:10px;
                                      @include flexBox(column,center,flex-start);
+                                     .MenuEntreesList1LigtText{
+                                        margin-top: 5px;
+                                     }
                                    }
 
                                    .MenuEntreesList1Price
@@ -117,10 +120,15 @@ main
                                     position: relative;
                                     display: inline;
                                    
-                                    @include flexBox(row,flex-end,center);
+                                    @include flexBox(row,flex-end,end);
                                     
                                     
-                                    
+                                    .MenuPrice{
+                                        margin-right: 15px;
+                                        margin-bottom: 10px;
+                                        
+                                        @include flexBox(column,null,end);
+                                    }
 
                                    }
                                    .menuCheckmark

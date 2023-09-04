@@ -104,6 +104,9 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .Me
   justify-content: center;
   align-items: flex-start;
 }
+main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1LigtText {
+  margin-top: 5px;
+}
 main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
   width: 30%;
   position: relative;
@@ -111,7 +114,14 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .Me
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
+  align-items: end;
+}
+main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price .MenuPrice {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .menuCheckmark {
   visibility: hidden;
