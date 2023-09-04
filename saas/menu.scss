@@ -135,6 +135,19 @@ main
                                         transform-origin: right 50%;
                                         animation-name:MenuHoverTransition;
                                         animation-duration: 1000ms;   
+                                        .fa-check{
+                                            background-color: white;
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 10px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            text-align: center;
+                                            color: $Tertiary;
+                                            animation-name:MenuHoverTransitionCheckmark;
+                                            animation-duration: 500ms;
+                                        }
 
                                     }
 
@@ -150,10 +163,7 @@ main
                                      align-items: center;
                                      margin-left:10px;
                                                  
-                                     .fa-check{
-                                            transition-duration: 1s;
-                                            transform: rotate(360deg);
-                                         }  
+                                      
                                 
                                 }
                               }
@@ -186,8 +196,18 @@ main
 @keyframes MenuHoverTransition {
     0%{ 
         transform:ScaleX(0);}
+        
 
     100%{
         transform:ScaleX(1);
+        
+    }   
+   }
+
+   @keyframes MenuHoverTransitionCheckmark {
+        
+    100%{
+        transform: rotate(360deg);
+        
     }   
    }

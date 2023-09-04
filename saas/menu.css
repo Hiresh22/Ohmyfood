@@ -126,6 +126,19 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .me
   animation-name: MenuHoverTransition;
   animation-duration: 1000ms;
 }
+main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .menuCheckmark .fa-check {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #99E2D0;
+  animation-name: MenuHoverTransitionCheckmark;
+  animation-duration: 500ms;
+}
 main .MenuMainContainer .MenuEntrees .childMenuEntreesList:hover .menuCheckmark {
   visibility: visible;
   display: inline;
@@ -134,10 +147,6 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList:hover .menuCheckmark 
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-}
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList:hover .menuCheckmark .fa-check {
-  transition-duration: 1s;
-  transform: rotate(360deg);
 }
 main .MenuMainContainer .MenuBasilleButton {
   width: 130px;
@@ -164,6 +173,11 @@ main .MenuMainContainer .MenuBasilleButton {
   }
   100% {
     transform: ScaleX(1);
+  }
+}
+@keyframes MenuHoverTransitionCheckmark {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
