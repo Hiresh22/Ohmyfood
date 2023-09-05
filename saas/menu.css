@@ -80,7 +80,12 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesText {
   color: red;
   margin-bottom: 10px;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList {
+main .MenuMainContainer .MenuEntrees .ParentMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList {
   width: 100%;
   background-color: white;
   height: 60px;
@@ -90,13 +95,13 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList {
   flex-direction: column;
   justify-content: flex-start;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 {
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text {
   width: 80%;
   margin-left: 10px;
   display: flex;
@@ -104,10 +109,10 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .Me
   justify-content: center;
   align-items: flex-start;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1LigtText {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1LigtText {
   margin-top: 5px;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
   width: 30%;
   position: relative;
   display: inline;
@@ -116,14 +121,14 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .Me
   justify-content: flex-end;
   align-items: end;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price .MenuPrice {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price .MenuPrice {
   margin-right: 15px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .menuCheckmark {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark {
   visibility: hidden;
   display: none;
   position: relative;
@@ -136,7 +141,7 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .me
   animation-name: MenuHoverTransition;
   animation-duration: 1000ms;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .menuCheckmark .fa-check {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark .fa-check {
   background-color: white;
   width: 20px;
   height: 20px;
@@ -149,7 +154,7 @@ main .MenuMainContainer .MenuEntrees .childMenuEntreesList .MenuEntreesList1 .me
   animation-name: MenuHoverTransitionCheckmark;
   animation-duration: 500ms;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesList:hover .menuCheckmark {
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:hover .menuCheckmark {
   visibility: visible;
   display: inline;
   display: flex;
