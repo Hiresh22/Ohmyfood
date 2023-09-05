@@ -95,6 +95,9 @@ main
                      color:red;
                      margin-bottom: 10px;
                     }
+                .ParentMenu{
+                    @include flexBox(column,flex-start,null);
+                    
                     .childMenuEntreesList{
                         width: 100%;
                         background-color: white ;
@@ -176,6 +179,7 @@ main
                                 }
                               }
                     }
+                }
          } 
 
          .MenuBasilleButton{
