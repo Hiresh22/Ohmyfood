@@ -84,28 +84,28 @@ main .MenuMainContainer .MenuEntrees .ParentMenu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  animation-duration: 2000ms;
+  animation-name: MenuVisiblity;
 }
 main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(1) {
   position: relative;
   animation-duration: 1000ms;
-  animation-name: MenuVisiblity;
   animation-name: MenuLoad;
+  animation-fill-mode: forwards;
 }
 main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(2) {
   position: relative;
-  visibility: hidden;
   animation-duration: 1000ms;
   animation-name: MenuLoad;
   animation-delay: 0.5s;
-  visibility: visible;
+  animation-fill-mode: forwards;
 }
 main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(3) {
   position: relative;
-  visibility: hidden;
   animation-duration: 1000ms;
   animation-name: MenuLoad;
   animation-delay: 0.8s;
-  visibility: visible;
+  animation-fill-mode: forwards;
 }
 main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList {
   position: relative;
@@ -220,26 +220,24 @@ main .MenuMainContainer .MenuBasilleButton {
 }
 @keyframes MenuLoad {
   0% {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
   25% {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
   }
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 @keyframes MenuVisiblity {
   0% {
-    display: none;
-    visibility: hidden;
+    opacity: 0;
   }
   100% {
-    display: block;
-    visibility: visible;
+    opacity: 1;
   }
 }
 
