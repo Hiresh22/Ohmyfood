@@ -85,7 +85,30 @@ main .MenuMainContainer .MenuEntrees .ParentMenu {
   flex-direction: column;
   justify-content: flex-start;
 }
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(1) {
+  position: relative;
+  animation-duration: 1000ms;
+  animation-name: MenuVisiblity;
+  animation-name: MenuLoad;
+}
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(2) {
+  position: relative;
+  visibility: hidden;
+  animation-duration: 1000ms;
+  animation-name: MenuLoad;
+  animation-delay: 0.5s;
+  visibility: visible;
+}
+main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(3) {
+  position: relative;
+  visibility: hidden;
+  animation-duration: 1000ms;
+  animation-name: MenuLoad;
+  animation-delay: 0.8s;
+  visibility: visible;
+}
 main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList {
+  position: relative;
   width: 100%;
   background-color: white;
   height: 60px;
@@ -193,6 +216,30 @@ main .MenuMainContainer .MenuBasilleButton {
 @keyframes MenuHoverTransitionCheckmark {
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes MenuLoad {
+  0% {
+    transform: translateY(-2px);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes MenuVisiblity {
+  0% {
+    display: none;
+    visibility: hidden;
+  }
+  100% {
+    display: block;
+    visibility: visible;
   }
 }
 
