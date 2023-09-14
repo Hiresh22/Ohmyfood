@@ -313,17 +313,60 @@ main
 
 @keyframes buttonColor {
     
-    100%{
-        background-color:#FF79DA;
+    0%{
+        box-shadow: 10px  20px 10px;
     }
+
+    
     
 }
 
 body
 {
     background-color:$backgound;
+    
+    .Pageloder
+    {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height:100%;
+        @include flexBox(column,center,center);
+        background-color: white;
+        
+        &:after
+    {
+        content:"";
+        
+        width:70px;
+        height:70px;
+        border:10px solid gray;
+        border-radius: 50%;
+        border-top-color: blue;
+        visibility: visible;
+        animation-name: homepageloder;
+        animation-duration:1s;
+        animation-iteration-count:1;
+       
+       }
+       
+       &--hidden
+       {
+        visibility: hidden;
 
+       
+       }
+    
+    }
+
+    
+       
+
+     
 }
+
+
 
 .footer
 {
@@ -336,8 +379,13 @@ body
     padding-bottom: 10px;
 }
 
-
-
+@keyframes homepageloder {
+ from{transform: rotate(0deg); } 
+    
+    to{transform: rotate(360deg);
+     opacity: 0;
+     visibility: hidden;}
+}
 
 
 .Location
