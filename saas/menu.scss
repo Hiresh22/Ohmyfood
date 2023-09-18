@@ -259,12 +259,15 @@ main
 }
 
 .footer
-{
-    background-color:$footerBackGroundColor;
-    color: $footerTextColor;
-    width: 375px;
-    margin: auto;
-}
+        {
+                width: 375px;
+                margin: auto;
+                background-color:$footerBackGroundColor;
+                color:$footerTextColor;
+                padding-left: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }   
 
 @keyframes MenuHoverTransition {
     0%{ 
