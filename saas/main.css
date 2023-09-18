@@ -4,7 +4,59 @@
   padding: 0px;
 }
 
-header {
+:root {
+  --gradient: linear-gradient(
+      45deg,
+      #9356DC,
+      #c85bf3,
+      #dc56d1,
+      #dc56bf,
+      #dc5695,
+      );
+}
+
+body {
+  background-color: #F2F2F2;
+}
+body .Pageloder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation-name: homepageloderfadeout;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+body .Pageloder:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgb(78, 78, 78);
+  animation-name: homepageloder;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+body .Pageloder .pageloaderext {
+  position: absolute;
+  font-weight: 700;
+  color: #5a18aa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body header {
   background-color: rgb(252, 254, 255);
   width: 375px;
   margin: auto;
@@ -14,7 +66,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-header .LogoImg {
+body header .LogoImg {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -23,12 +75,11 @@ header .LogoImg {
   height: 70%;
   object-fit: cover;
 }
-
-main {
+body main {
   width: 375px;
   margin: auto;
 }
-main .Section_Location {
+body main .Section_Location {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,7 +88,7 @@ main .Section_Location {
   margin-bottom: 15px;
   background-color: transparent;
 }
-main .Nav {
+body main .Nav {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -46,17 +97,17 @@ main .Nav {
   padding-right: 10px;
   padding-left: 10px;
 }
-main .Nav .navText {
+body main .Nav .navText {
   margin-bottom: 15px;
 }
-main .Nav .navLinks {
+body main .Nav .navLinks {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main .Nav .navLinks .navResturant {
+body main .Nav .navLinks .navResturant {
   width: 100%;
   height: 80px;
   border-radius: 30px;
@@ -66,20 +117,20 @@ main .Nav .navLinks .navResturant {
   flex-direction: row;
   align-items: center;
 }
-main .Nav .navLinks .navResturant:hover {
+body main .Nav .navLinks .navResturant:hover {
   background-color: #dfcce7;
 }
-main .Nav .navLinks .navResturant .divNavIconText {
+body main .Nav .navLinks .navResturant .divNavIconText {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-main .Nav .navLinks .navResturant .divNavIconText .navIconPadding {
+body main .Nav .navLinks .navResturant .divNavIconText .navIconPadding {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .Nav .navLinks .navResturant .circleIcon {
+body main .Nav .navLinks .navResturant .circleIcon {
   height: 15px;
   width: 15px;
   border: 1px solid #9356DC;
@@ -91,7 +142,7 @@ main .Nav .navLinks .navResturant .circleIcon {
   justify-content: center;
   align-items: center;
 }
-main .Nav .navLinks .navMenu {
+body main .Nav .navLinks .navMenu {
   width: 100%;
   height: 80px;
   border-radius: 30px;
@@ -101,20 +152,20 @@ main .Nav .navLinks .navMenu {
   flex-direction: row;
   align-items: center;
 }
-main .Nav .navLinks .navMenu:hover {
+body main .Nav .navLinks .navMenu:hover {
   background-color: #dfcce7;
 }
-main .Nav .navLinks .navMenu .divNavIconText {
+body main .Nav .navLinks .navMenu .divNavIconText {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-main .Nav .navLinks .navMenu .divNavIconText .navIconPadding {
+body main .Nav .navLinks .navMenu .divNavIconText .navIconPadding {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .Nav .navLinks .navMenu .circleIcon {
+body main .Nav .navLinks .navMenu .circleIcon {
   height: 15px;
   width: 15px;
   border: 1px solid #9356DC;
@@ -126,7 +177,7 @@ main .Nav .navLinks .navMenu .circleIcon {
   justify-content: center;
   align-items: center;
 }
-main .Nav .navLinks .navEnjoyatResturant {
+body main .Nav .navLinks .navEnjoyatResturant {
   width: 100%;
   height: 80px;
   border-radius: 30px;
@@ -135,20 +186,20 @@ main .Nav .navLinks .navEnjoyatResturant {
   flex-direction: row;
   align-items: center;
 }
-main .Nav .navLinks .navEnjoyatResturant:hover {
+body main .Nav .navLinks .navEnjoyatResturant:hover {
   background-color: #dfcce7;
 }
-main .Nav .navLinks .navEnjoyatResturant .divNavIconText {
+body main .Nav .navLinks .navEnjoyatResturant .divNavIconText {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-main .Nav .navLinks .navEnjoyatResturant .divNavIconText .navIconPadding {
+body main .Nav .navLinks .navEnjoyatResturant .divNavIconText .navIconPadding {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .Nav .navLinks .navEnjoyatResturant .circleIcon {
+body main .Nav .navLinks .navEnjoyatResturant .circleIcon {
   height: 15px;
   width: 15px;
   border: 1px solid #9356DC;
@@ -160,7 +211,7 @@ main .Nav .navLinks .navEnjoyatResturant .circleIcon {
   justify-content: center;
   align-items: center;
 }
-main .Section2 {
+body main .Section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,33 +221,36 @@ main .Section2 {
   border: 2px solid white;
   background-color: #F1F1F1;
 }
-main .Section2 .ExploreRestaurants {
+body main .Section2 .ExploreRestaurants {
   width: 200px;
   height: 50px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+  background-image: linear-gradient(25deg, #9356DC, #a041c5, #dc56af);
+  background-size: 130%;
+  background-position: right;
   margin-bottom: 15px;
   color: white;
 }
-main .Section2 .ExploreRestaurants:hover {
+body main .Section2 .ExploreRestaurants:hover {
   color: black;
   animation-name: buttonColor;
-  animation-duration: 4s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  box-shadow: 3px 3px 3px rgb(78, 78, 78);
 }
-main .Section2 .header_1 {
+body main .Section2 .header_1 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-main .Section2 .header_2 {
+body main .Section2 .header_2 {
   margin-bottom: 15px;
   text-align: center;
 }
-main .Restaurants {
+body main .Restaurants {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -207,18 +261,18 @@ main .Restaurants {
   padding-left: 15px;
   padding-right: 15px;
 }
-main .Restaurants .divTextRestuarants {
+body main .Restaurants .divTextRestuarants {
   padding-top: 25px;
   padding-bottom: 15px;
 }
-main .Restaurants .ContainerRestaurantsCards {
+body main .Restaurants .ContainerRestaurantsCards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
   width: 340px;
   height: 230px;
   display: flex;
@@ -228,23 +282,23 @@ main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
   border: white 2px;
   border-radius: 10px;
 }
-main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages {
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages {
   width: 100%;
   height: max-content;
 }
-main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .Rest_images {
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .Rest_images {
   height: 180px;
   width: 340px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText {
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsText {
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsText {
   width: 70%;
   padding-left: 5px;
   padding-right: 5px;
@@ -254,7 +308,7 @@ main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText 
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons {
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -262,44 +316,7 @@ main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText 
   align-items: flex-end;
   padding-right: 10px;
 }
-
-@keyframes buttonColor {
-  0% {
-    box-shadow: 10px 20px 10px;
-  }
-}
-body {
-  background-color: #F2F2F2;
-}
-body .Pageloder {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-body .Pageloder:after {
-  content: "";
-  width: 70px;
-  height: 70px;
-  border: 10px solid gray;
-  border-radius: 50%;
-  border-top-color: blue;
-  visibility: visible;
-  animation-name: homepageloder;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-body .Pageloder--hidden {
-  visibility: hidden;
-}
-
-.footer {
+body .footer {
   width: 375px;
   margin: auto;
   background-color: rgba(14, 13, 13, 0.829);
@@ -309,14 +326,32 @@ body .Pageloder--hidden {
   padding-bottom: 10px;
 }
 
-@keyframes homepageloder {
-  from {
-    transform: rotate(0deg);
+@keyframes buttonColor {
+  0% {
+    background-position: left;
   }
-  to {
+  100% {
+    background-position: left;
+  }
+}
+@keyframes homepageloder {
+  0% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #a30cd1;
+  }
+  50% {
+    transform: rotate(240deg);
+    box-shadow: 1px 5px 2px #390fd1;
+  }
+  100% {
     transform: rotate(360deg);
-    opacity: 0;
+    box-shadow: 1px 5px 2px #28c014;
+  }
+}
+@keyframes homepageloderfadeout {
+  100% {
     visibility: hidden;
+    display: none;
   }
 }
 .Location {

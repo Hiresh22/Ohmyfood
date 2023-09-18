@@ -2,6 +2,16 @@
 @import './variables';
 @import './resets';
 
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        #9356DC,
+        #c85bf3,
+        #dc56d1,
+        #dc56bf,
+        #dc5695,
+        );
+}
 @mixin flexBox($direction,$justifyContent,$alignitem)
  {
                 display: flex;
@@ -26,43 +36,92 @@
 
   }  
     
+  
+  body
+  {
+      background-color:$backgound;
+     
+      
+      .Pageloder
+      {
+          position:absolute;
+          top:0;
+          left: 0;
+          width: 100vw;
+          height:100vh;
+          @include flexBox(column,center,center);
+          background-color: white;
+          animation-name: homepageloderfadeout;
+          animation-duration: .5s;
+          animation-delay: 3s;
+          animation-fill-mode: forwards;
+          
+          
+          &:before
+             {
+                position: absolute;
+          content:'';
+            width:100px;
+          height:100px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgb(78, 78, 78);
+          animation-name: homepageloder;
+          animation-duration:3s;
+          animation-iteration-count:infinite;
+          animation-timing-function:ease;
+          animation-fill-mode:forwards;
+                  }
+         
+         .pageloaderext
+         {
+            position:absolute;
+            font-weight: 700;
+            color: #5a18aa;
+            @include flexBox(row,center,center);
+         }
+      
+      }
+   
 
-    header
-            {
-              
-                background-color: rgb(252, 254, 255);
-                width: 375px;
-                margin:auto;
-                flex:auto;
-                @include flexBox(row,center,center);
-                
-                .LogoImg
-                   {
-                      width:60%;
-                      margin-left: auto;
-                      margin-right: auto;
-                      margin-top: 10px;
-                      margin-bottom: 10px;
-                      height:70%;
-                        object-fit: cover;
-                       
-                   }
+            header
+                    {
+                    
+                        background-color: rgb(252, 254, 255);
+                        width: 375px;
+                        margin:auto;
+                        flex:auto;
+                        @include flexBox(row,center,center);
+                        
+                        .LogoImg
+                        {
+                            width:60%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            height:70%;
+                                object-fit: cover;
+                            
+                        }
+                    }
+
+
+
+
+
+        main
+        {
+            
+            width: 375px;
+            margin: auto;
+            
+            .Section_Location
+            {   @include flexBox(row,center,center);
+                margin-top: 15px;
+                margin-bottom: 15px;
+                background-color: transparent;
             }
-
-
-main
-{
-    
-    width: 375px;
-    margin: auto;
-    
-    .Section_Location
-    {   @include flexBox(row,center,center);
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-color: transparent;
-    }
-    
+            
 
             .Nav
             {
@@ -199,7 +258,9 @@ main
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color:$Primary;
+                        background-image: linear-gradient(25deg,#9356DC,#a041c5,#dc56af);
+                        background-size: 130%;
+                        background-position: right;
                         margin-bottom:15px;
                         color: white;
                         
@@ -209,10 +270,10 @@ main
                           {
                             color:black;
                             animation-name: buttonColor;
-                            animation-duration:4s;
+                            animation-duration:.5s;
                             animation-iteration-count: infinite;
                             animation-direction: alternate;
-                           
+                            box-shadow: 3px 3px 3px rgb(78, 78, 78);
                           }         
                     }
 
@@ -308,84 +369,75 @@ main
 
                     }
 
-}
+        }
 
 
-@keyframes buttonColor {
-    
-    0%{
-        box-shadow: 10px  20px 10px;
-    }
 
-    
-    
-}
 
-body
-{
-    background-color:$backgound;
-    
-    .Pageloder
-    {
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100vw;
-        height:100%;
-        @include flexBox(column,center,center);
-        background-color: white;
-        
-        &:after
-    {
-        content:"";
-        
-        width:70px;
-        height:70px;
-        border:10px solid gray;
-        border-radius: 50%;
-        border-top-color: blue;
-        visibility: visible;
-        animation-name: homepageloder;
-        animation-duration:1s;
-        animation-iteration-count:1;
-       
-       }
-       
-       &--hidden
-       {
-        visibility: hidden;
 
-       
-       }
-    
-    }
-
-    
+            .footer
+            {
+                width: 375px;
+                margin: auto;
+                background-color:$footerBackGroundColor;
+                color:$footerTextColor;
+                padding-left: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }   
        
 
      
 }
 
+@keyframes buttonColor {
+    
+    0%{
+       background-position: left;
 
-
-.footer
-{
-    width: 375px;
-    margin: auto;
-    background-color:$footerBackGroundColor;
-    color:$footerTextColor;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    }
+   100%{background-position: left;}
+    
+    
 }
+
+
+
+
+
+
 
 @keyframes homepageloder {
- from{transform: rotate(0deg); } 
+
+    0%{
     
-    to{transform: rotate(360deg);
-     opacity: 0;
-     visibility: hidden;}
+    transform: rotate(180deg); 
+    box-shadow: 1px 5px 2px #a30cd1;} 
+   
+   50%{transform: rotate(240deg);
+       box-shadow: 1px 5px 2px #390fd1;}
+   
+       
+
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #28c014;
+        
+           }
 }
+
+@keyframes homepageloderfadeout {
+        
+        100%{
+            visibility: hidden;
+             display: none;
+             
+               }
+    }
+    
+
+
+
 
 
 .Location
