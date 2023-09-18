@@ -196,9 +196,16 @@ main .MenuMainContainer .MenuBasilleButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+  background-image: linear-gradient(25deg, #9356DC, #a041c5, #dc56af);
   margin-bottom: 15px;
   color: white;
+}
+main .MenuMainContainer .MenuBasilleButton:hover {
+  animation-name: buttonColor;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  box-shadow: 3px 3px 3px rgb(78, 78, 78);
 }
 
 .footer {
@@ -241,6 +248,14 @@ main .MenuMainContainer .MenuBasilleButton {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes buttonColor {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: left;
   }
 }
 

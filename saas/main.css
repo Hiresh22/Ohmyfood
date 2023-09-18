@@ -4,17 +4,6 @@
   padding: 0px;
 }
 
-:root {
-  --gradient: linear-gradient(
-      45deg,
-      #9356DC,
-      #c85bf3,
-      #dc56d1,
-      #dc56bf,
-      #dc5695,
-      );
-}
-
 body {
   background-color: #F2F2F2;
 }

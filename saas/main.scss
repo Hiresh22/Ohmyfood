@@ -2,16 +2,10 @@
 @import './variables';
 @import './resets';
 
-:root{
-    --gradient: linear-gradient(
-        45deg,
-        #9356DC,
-        #c85bf3,
-        #dc56d1,
-        #dc56bf,
-        #dc5695,
-        );
-}
+
+
+
+
 @mixin flexBox($direction,$justifyContent,$alignitem)
  {
                 display: flex;
@@ -59,10 +53,10 @@
           
           &:before
              {
-                position: absolute;
-          content:'';
+            position: absolute;
+            content:'';
             width:100px;
-          height:100px;
+            height:100px;
             border-radius: 50%;
             box-shadow: 0 0 5px rgb(78, 78, 78);
           animation-name: homepageloder;
@@ -345,7 +339,7 @@
                                     @include flexBox(row,null,null);
                                     flex-wrap: wrap;
                                         .innerRestaurantsText{
-                                                    width: 70%;
+                                                     width: 70%;
                                                     padding-left: 5px;
                                                     padding-right: 5px;
                                                     @include flexBox(column,center,flex-start);
@@ -409,15 +403,13 @@
 
 @keyframes homepageloder {
 
-    0%{
-    
-    transform: rotate(180deg); 
+    0%{transform: rotate(120deg); 
     box-shadow: 1px 5px 2px #a30cd1;} 
    
-   50%{transform: rotate(240deg);
+   50%{transform: rotate(180deg);
        box-shadow: 1px 5px 2px #390fd1;}
    
-       
+   
 
     100%{
         transform: rotate(360deg);
