@@ -218,7 +218,7 @@ body main .Section2 .ExploreRestaurants {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(25deg, #9356DC, #a041c5, #dc56af);
-  background-size: 130%;
+  background-size: 160%;
   background-position: right;
   margin-bottom: 15px;
   color: white;
@@ -305,6 +305,22 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .Restaurants
   align-items: flex-end;
   padding-right: 10px;
 }
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons .fa-heart {
+  color: #28c014;
+  position: relative;
+  overflow: hidden;
+}
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons .fa-heart:hover {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #390fd1;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: heartBackgroundFill 4s ease-in-out infinite;
+  z-index: -1;
+}
 body .footer {
   width: 375px;
   margin: auto;
@@ -314,22 +330,38 @@ body .footer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+body .footer .maillink {
+  color: white;
+  text-decoration: none;
+}
 
 @keyframes buttonColor {
   0% {
-    background-position: left;
+    background-position: right;
+    background-size: 200%;
   }
   100% {
-    background-position: left;
+    background-position: right;
+    background-size: 300%;
+  }
+}
+@keyframes heartBackgroundFill {
+  from {
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  to {
+    top: -10px;
+    transform: translateX(-50%);
   }
 }
 @keyframes homepageloder {
   0% {
-    transform: rotate(180deg);
+    transform: rotate(120deg);
     box-shadow: 1px 5px 2px #a30cd1;
   }
   50% {
-    transform: rotate(240deg);
+    transform: rotate(180deg);
     box-shadow: 1px 5px 2px #390fd1;
   }
   100% {

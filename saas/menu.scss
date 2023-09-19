@@ -267,7 +267,14 @@ main
                 padding-left: 15px;
                 padding-top: 10px;
                 padding-bottom: 10px;
+                
+                .maillink{
+                    color: white;
+                    text-decoration: none;
+                }
             }   
+                
+             
 
 @keyframes MenuHoverTransition {
     0%{ 

@@ -253,7 +253,7 @@
                         justify-content: center;
                         align-items: center;
                         background-image: linear-gradient(25deg,#9356DC,#a041c5,#dc56af);
-                        background-size: 130%;
+                        background-size: 160%;
                         background-position: right;
                         margin-bottom:15px;
                         color: white;
@@ -350,6 +350,32 @@
                                             width: 30%;
                                             @include flexBox(column,center,flex-end);
                                             padding-right: 10px;
+                                            
+                                                 
+                                            .fa-heart
+                                            {   
+                                               
+                                              color: #28c014;
+                                              position: relative;
+                                              overflow: hidden;
+
+                                              &:hover
+                                            {
+                                                content:"";
+                                                position: absolute;
+                                                width: 20px;
+                                                height: 20px;
+                                                background-color:#390fd1;
+                                                left: 50%;
+                                                transform: translateX(-50%);
+                                                animation:heartBackgroundFill 4s ease-in-out infinite;
+                                                z-index: -1;
+                                            }
+                                           
+
+                                            }
+
+                                            
                                         }
                                 }
                         
@@ -378,6 +404,11 @@
                 padding-left: 15px;
                 padding-top: 10px;
                 padding-bottom: 10px;
+
+                .maillink{
+                    color: white;
+                    text-decoration: none;
+                }
             }   
        
 
@@ -387,11 +418,26 @@
 @keyframes buttonColor {
     
     0%{
-       background-position: left;
-
-    }
-   100%{background-position: left;}
+        background-position: right;
+        background-size: 200%;
+ 
+     }
+    100%{background-position: right;
+        background-size: 300%;
+      }
+     
     
+    
+}
+
+@keyframes heartBackgroundFill {
+    from{ top:10px;
+         transform: translateX(-50%);
+    }
+     
+    to{ top:-10px;
+        transform: translateX(-50%);
+     }
     
 }
 
