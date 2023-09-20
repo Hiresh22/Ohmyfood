@@ -274,6 +274,20 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages {
   width: 100%;
   height: max-content;
+  margin: 0px;
+}
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .newRestuarant {
+  height: 30px;
+  width: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 5px;
 }
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .Rest_images {
   height: 180px;
@@ -300,26 +314,17 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .Restaurants
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons {
   width: 30%;
   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   padding-right: 10px;
 }
-body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons .fa-heart {
-  color: #28c014;
-  position: relative;
-  overflow: hidden;
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons .fa-solid {
+  transform: scale(0);
 }
-body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons .fa-heart:hover {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #390fd1;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: heartBackgroundFill 4s ease-in-out infinite;
-  z-index: -1;
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons .fa-regular:hover + .fa-solid {
+  animation: heartBackgroundFill 3s forwards ease;
 }
 body .footer {
   width: 375px;
@@ -346,13 +351,11 @@ body .footer .maillink {
   }
 }
 @keyframes heartBackgroundFill {
-  from {
-    top: 10px;
-    transform: translateX(-50%);
+  0% {
+    transform: scale(0);
   }
-  to {
-    top: -10px;
-    transform: translateX(-50%);
+  100% {
+    transform: scale(1);
   }
 }
 @keyframes homepageloder {

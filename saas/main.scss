@@ -322,7 +322,22 @@
                                                 
                                                 width: 100%;
                                                 height: max-content;    
-                        
+                                                margin: 0px;
+
+                                                  .newRestuarant{
+                                                    height: 30px;
+                                                    width:70px;
+                                                    text-align: center;
+                                                    @include flexBox(row,center, center);
+                                                    background-color:$Tertiary;
+                                                    position:absolute;
+                                                    margin-left: 250px;
+                                                    margin-top: 5px;
+                                                    
+
+                                                  }
+
+                                                  
                                                         .Rest_images
                                                     {
                                                     height:180px;
@@ -348,32 +363,34 @@
                                         }
                                         .innerRestaurantsIcons{
                                             width: 30%;
+                                            display: flex;
                                             @include flexBox(column,center,flex-end);
                                             padding-right: 10px;
                                             
+                                            
                                                  
-                                            .fa-heart
+                                            .fa-solid  
                                             {   
                                                
-                                              color: #28c014;
-                                              position: relative;
-                                              overflow: hidden;
-
-                                              &:hover
+                                            
+                                              transform: scale(0);
+                                              
+                                            }
+                                             
+                                            .fa-regular{
+                                              
+                                              &:hover + .fa-solid
                                             {
-                                                content:"";
-                                                position: absolute;
-                                                width: 20px;
-                                                height: 20px;
-                                                background-color:#390fd1;
-                                                left: 50%;
-                                                transform: translateX(-50%);
-                                                animation:heartBackgroundFill 4s ease-in-out infinite;
-                                                z-index: -1;
+                                              
+                                                
+                                                animation: heartBackgroundFill 3s forwards ease;
+                                                
                                             }
+                                  
+                                            
                                            
-
                                             }
+
 
                                             
                                         }
@@ -431,13 +448,13 @@
 }
 
 @keyframes heartBackgroundFill {
-    from{ top:10px;
-         transform: translateX(-50%);
-    }
-     
-    to{ top:-10px;
-        transform: translateX(-50%);
+    0%{
+     transform: scale(0);
+        
+ 
      }
+    100%{transform: scale(1);
+      }
     
 }
 

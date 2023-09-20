@@ -217,6 +217,10 @@ main .MenuMainContainer .MenuBasilleButton:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.footer .maillink {
+  color: white;
+  text-decoration: none;
+}
 
 @keyframes MenuHoverTransition {
   0% {
