@@ -266,7 +266,7 @@ body main .Restaurants .ContainerRestaurantsCards {
 }
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
   width: 340px;
-  height: 230px;
+  height: 245px;
   display: flex;
   display: flex;
   flex-direction: column;
@@ -308,13 +308,17 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .Restaurants
 }
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsText {
   width: 70%;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsText .RestaurantsNameText {
+  margin-bottom: 5px;
 }
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons {
   width: 30%;
@@ -348,7 +352,7 @@ body .footer {
   margin: auto;
   background-color: rgba(14, 13, 13, 0.829);
   color: white;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
