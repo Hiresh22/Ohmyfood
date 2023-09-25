@@ -15,6 +15,8 @@
 body
 {
     background-color:$backgound;
+    display: flex;
+    @include flexBox(column,null,null);
 
 }
 
@@ -43,11 +45,12 @@ header{
 }
 
 
-main
+.main
 {
     
     width: 375px;
     margin: auto;
+   
     
    .RestaurantsImages
    {
@@ -63,13 +66,14 @@ main
         border-top-right-radius: 35px;
         padding-left: 10px;
         padding-right: 10px;
-
+       
+        border-left: .5px solid white;
+            border-right: .5px solid white;
         width:100%;
         background-color:$backgoundSection2;
-        border-left: .5px solid white;
-        border-right: .5px solid white;
+        
         position: relative;
-        bottom: 50px;
+        top: -50px;
         @include flexBox(column,center,center);
          .MenuBasille
          {
@@ -79,6 +83,11 @@ main
            display: flex;
            flex-direction: row; 
                .MenuBasilleText{
+                
+                font-size:$menuTitleFont-fontSize;
+                font-weight: $menuTitleFont-fontWeight;
+                font-style: italic;
+                
                 padding-left: 20px;
                    width: 70%;
                 }   
@@ -234,9 +243,9 @@ main
          } 
 
          .MenuBasilleButton{
-            width: 130px;
+            width: 200px;
             height: 50px;
-            border-radius: 20px;
+            border-radius: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -244,6 +253,8 @@ main
             background-image: linear-gradient(25deg,#9356DC,#a041c5,#dc56af);
             margin-bottom:15px;
             color: white;
+            margin-top: 20px;
+            margin-bottom: 60px;
            
             &:hover
             {
@@ -260,19 +271,72 @@ main
 
 .footer
         {
-                width: 375px;
-                margin: auto;
-                background-color:$footerBackGroundColor;
-                color:$footerTextColor;
-                padding-left: 15px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+            width: 375px;
+            margin: auto;
+            background-color:$footerBackGroundColor;
+            color:$footerTextColor;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: relative;
+            top:-50px;
+            display: flex;
+            @include flexBox(column,null,null);
+            
+            .FooterChild1
+            {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-style: italic;
+                font-weight: 700;
                 
-                .maillink{
-                    color: white;
-                    text-decoration: none;
-                }
-            }   
+            }
+
+            .FooterChild2
+            {
+                margin-top: 3px;
+                margin-bottom: 3px;
+                font-size: small;
+            }
+
+            .FooterChild3
+            {
+                margin-top: 3px;
+                margin-bottom: 3px;
+                font-size: small;
+            }
+            .FooterChild4
+            {
+                margin-top: 3px;
+                margin-bottom: 3px;
+                font-size: small;
+            }
+            .FooterChild5
+            {
+                margin-top: 5px;
+                margin-bottom: 20px;
+                font-size: small;
+            }
+
+
+           
+            .maillink{
+                color: white;
+                text-decoration: none;
+            }
+
+            .fa-utensils{
+                margin-right:10px;
+
+                height: 10px;
+            }
+
+            .fa-handshake{
+                margin-right:5px;
+                height: 10px;
+            }
+        }   
+             
                 
              
 

@@ -6,6 +6,9 @@
 
 body {
   background-color: #F2F2F2;
+  display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -31,86 +34,89 @@ header .LogoImg {
   object-fit: cover;
 }
 
-main {
+.main {
   width: 375px;
   margin: auto;
 }
-main .RestaurantsImages .Rest_images {
+.main .RestaurantsImages .Rest_images {
   width: 100%;
   height: 250px;
 }
-main .MenuMainContainer {
+.main .MenuMainContainer {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 100%;
-  background-color: #F1F1F1;
   border-left: 0.5px solid white;
   border-right: 0.5px solid white;
+  width: 100%;
+  background-color: #F1F1F1;
   position: relative;
-  bottom: 50px;
+  top: -50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .MenuMainContainer .MenuBasille {
+.main .MenuMainContainer .MenuBasille {
   width: 100%;
   margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
   flex-direction: row;
 }
-main .MenuMainContainer .MenuBasille .MenuBasilleText {
+.main .MenuMainContainer .MenuBasille .MenuBasilleText {
+  font-size: x-large;
+  font-weight: 900;
+  font-style: italic;
   padding-left: 20px;
   width: 70%;
 }
-main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon {
+.main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon {
   width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 20px;
 }
-main .MenuMainContainer .MenuEntrees {
+.main .MenuMainContainer .MenuEntrees {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-main .MenuMainContainer .MenuEntrees .childMenuEntreesText {
+.main .MenuMainContainer .MenuEntrees .childMenuEntreesText {
   color: red;
   margin-bottom: 10px;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu {
+.main .MenuMainContainer .MenuEntrees .ParentMenu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   animation-duration: 2000ms;
   animation-name: MenuVisiblity;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(1) {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(1) {
   position: relative;
   animation-duration: 1000ms;
   animation-name: MenuLoad;
   animation-fill-mode: forwards;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(2) {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(2) {
   position: relative;
   animation-duration: 1000ms;
   animation-name: MenuLoad;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(3) {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:nth-child(3) {
   position: relative;
   animation-duration: 1000ms;
   animation-name: MenuLoad;
   animation-delay: 0.8s;
   animation-fill-mode: forwards;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList {
   position: relative;
   width: 100%;
   background-color: white;
@@ -121,13 +127,13 @@ main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList {
   flex-direction: column;
   justify-content: flex-start;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 {
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text {
   width: 80%;
   margin-left: 10px;
   display: flex;
@@ -135,10 +141,10 @@ main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntr
   justify-content: center;
   align-items: flex-start;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1LigtText {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1LigtText {
   margin-top: 5px;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
   width: 30%;
   position: relative;
   display: inline;
@@ -147,14 +153,14 @@ main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntr
   justify-content: flex-end;
   align-items: end;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price .MenuPrice {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price .MenuPrice {
   margin-right: 15px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark {
   visibility: hidden;
   display: none;
   position: relative;
@@ -167,7 +173,7 @@ main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntr
   animation-name: MenuHoverTransition;
   animation-duration: 1000ms;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark .fa-check {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark .fa-check {
   background-color: white;
   width: 20px;
   height: 20px;
@@ -180,7 +186,7 @@ main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntr
   animation-name: MenuHoverTransitionCheckmark;
   animation-duration: 500ms;
 }
-main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:hover .menuCheckmark {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:hover .menuCheckmark {
   visibility: visible;
   display: inline;
   display: flex;
@@ -189,18 +195,20 @@ main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:hover .me
   align-items: center;
   margin-left: 10px;
 }
-main .MenuMainContainer .MenuBasilleButton {
-  width: 130px;
+.main .MenuMainContainer .MenuBasilleButton {
+  width: 200px;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(25deg, #9356DC, #a041c5, #dc56af);
   margin-bottom: 15px;
   color: white;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
-main .MenuMainContainer .MenuBasilleButton:hover {
+.main .MenuMainContainer .MenuBasilleButton:hover {
   animation-name: buttonColor;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
@@ -216,10 +224,49 @@ main .MenuMainContainer .MenuBasilleButton:hover {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
+  top: -50px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+}
+.footer .FooterChild1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-weight: 700;
+}
+.footer .FooterChild2 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: small;
+}
+.footer .FooterChild3 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: small;
+}
+.footer .FooterChild4 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: small;
+}
+.footer .FooterChild5 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: small;
 }
 .footer .maillink {
   color: white;
   text-decoration: none;
+}
+.footer .fa-utensils {
+  margin-right: 10px;
+  height: 10px;
+}
+.footer .fa-handshake {
+  margin-right: 5px;
+  height: 10px;
 }
 
 @keyframes MenuHoverTransition {

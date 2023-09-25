@@ -43,6 +43,7 @@
           left: 0;
           width: 100vw;
           height:100vh;
+          display: flex;
           @include flexBox(column,center,center);
           background-color: white;
           animation-name: homepageloderfadeout;
@@ -51,7 +52,7 @@
           animation-fill-mode: forwards;
           
           
-          &:before
+          &::after
              {
             position: absolute;
             content:'';
@@ -60,7 +61,7 @@
             border-radius: 50%;
             box-shadow: 0 0 5px rgb(78, 78, 78);
           animation-name: homepageloder;
-          animation-duration:3s;
+          animation-duration:4s;
           animation-iteration-count:infinite;
           animation-timing-function:ease;
           animation-fill-mode:forwards;
@@ -70,8 +71,9 @@
          {
             position:absolute;
             font-weight: 700;
-            color: #5a18aa;
+            color: #a31090;
             @include flexBox(row,center,center);
+            animation: pageloaderextAnimation 4s ease forwards;
          }
       
       }
@@ -109,6 +111,9 @@
             width: 375px;
             margin: auto;
             
+              
+                animation: mainblockVisibility 6s ease-out;
+       
             .Section_Location
             {   @include flexBox(row,center,center);
                 margin-top: 15px;
@@ -304,38 +309,48 @@
                  .ContainerRestaurantsCards{
 
                             @include flexBox(column,space-between,flex-start);
-
-                            flex-wrap: wrap;
+                          flex-wrap: wrap;
+                          
                                                    
+                            
 
                            .RestaurantsCards
                           {
                                 width:340px;
                                 height: 230px;
+                                display: flex;
                                 @include flexBox(column,null,null);
+                               
                                 margin-bottom: 10px;
                                 background-color:white;
                                 border: white 2px;
                                 border-radius: 10px;
+                               
+
+                                .newRestuarant{
+                                    height: 30px;
+                                    width:70px;
+                                    text-align: center;
+                                    display: flex;
+                                    @include flexBox(row,center, center);
+                                    background-color:$Tertiary;
+                                    position: absolute;
+                                    margin-left: 250px;
+                                    margin-top: 5px;
+                                    
+    
+                                  }
 
                                         .RestaurantsImages{
                                                 
                                                 width: 100%;
                                                 height: max-content;    
                                                 margin: 0px;
+                                                                                        
+                                            
+                                                 
 
-                                                  .newRestuarant{
-                                                    height: 30px;
-                                                    width:70px;
-                                                    text-align: center;
-                                                    @include flexBox(row,center, center);
-                                                    background-color:$Tertiary;
-                                                    position:absolute;
-                                                    margin-left: 250px;
-                                                    margin-top: 5px;
-                                                    
-
-                                                  }
+                                               
 
                                                   
                                                         .Rest_images
@@ -369,27 +384,32 @@
                                             
                                             
                                                  
-                                            .fa-solid  
-                                            {   
-                                               
-                                            
-                                              transform: scale(0);
-                                              
-                                            }
-                                             
                                             .fa-regular{
-                                              
-                                              &:hover + .fa-solid
-                                            {
-                                              
+                                                display: flex;
+                                    
+                                                @include flexBox(column,center ,center);
                                                 
-                                                animation: heartBackgroundFill 3s forwards ease;
+                                                &:hover{
+                                                background-color: transparent;
+                                                animation: RegualareartBackgroundFill .5s forwards ease;
                                                 
-                                            }
+                                                }
+                                            .fa-solid{
+                                                
+                                               color:white;
+                                                &:hover 
+                                              {
+                                                
+                                                  visibility: visible;
+                                                  
+                                                  animation: heartBackgroundFill 3s forwards ease;
+                                                  
+                                              }
                                   
                                             
                                            
                                             }
+                                        }
 
 
                                             
@@ -421,10 +441,56 @@
                 padding-left: 15px;
                 padding-top: 10px;
                 padding-bottom: 10px;
+                display: flex;
+                @include flexBox(column,null,null);
+                
+                .FooterChild1
+                {
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    font-style: italic;
+                    font-weight: 700;
+                    
+                }
 
+                .FooterChild2
+                {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+
+                .FooterChild3
+                {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .FooterChild4
+                {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .FooterChild5
+                {
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                }
+
+
+               
                 .maillink{
                     color: white;
                     text-decoration: none;
+                }
+
+                .fa-utensils{
+                    margin-right:15px;
+
+                    height: 10px;
+                }
+
+                .fa-handshake{
+                    margin-right:10px;
+                    height: 10px;
                 }
             }   
        
@@ -448,12 +514,26 @@
 }
 
 @keyframes heartBackgroundFill {
-    0%{
-     transform: scale(0);
+    0%{ 
+    
+        visibility:hidden;
         
  
      }
-    100%{transform: scale(1);
+     100%{
+         
+        visibility: visible;
+      }
+    
+}
+
+@keyframes RegualareartBackgroundFill {
+    0%{  visibility: visible;
+        
+ 
+     }
+     100%{ visibility:hidden;
+         display: none;
       }
     
 }
@@ -463,22 +543,28 @@
 
 
 
-
 @keyframes homepageloder {
 
-    0%{transform: rotate(120deg); 
-    box-shadow: 1px 5px 2px #a30cd1;} 
+    0%{transform: rotate(0deg); 
+    box-shadow: 1px 5px 2px #a30cd1;
+     color: #a30cd1;} 
    
-   50%{transform: rotate(180deg);
-       box-shadow: 1px 5px 2px #390fd1;}
+   50%{ transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #e229d3;
+    color:#e229d3;}
    
-   
-
     100%{
         transform: rotate(360deg);
-        box-shadow: 1px 5px 2px #28c014;
-        
+        box-shadow: 1px 5px 2px #390fd1;
+        color: #390fd1;
            }
+}
+
+@keyframes pageloaderextAnimation {
+    0%{color: #a30cd1;}
+    50%{ color:#e229d3;}
+    100%{color: #390fd1;}
+    
 }
 
 @keyframes homepageloderfadeout {
@@ -488,6 +574,27 @@
              display: none;
              
                }
+    }
+
+
+    @keyframes mainblockVisibility {
+        
+        0%{
+            visibility: hidden;
+             display: none;
+             
+               }
+               50%{
+                visibility: hidden;
+                 display: none;
+               }
+       
+               100%{
+                 visibility: visible;
+                 
+                 
+                   }
+           
     }
     
 
