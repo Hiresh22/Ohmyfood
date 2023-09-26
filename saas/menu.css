@@ -79,6 +79,8 @@ header .LogoImg {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 10px;
   padding-right: 20px;
 }
 .main .MenuMainContainer .MenuEntrees {
@@ -151,10 +153,15 @@ header .LogoImg {
 .main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text {
   width: 80%;
   margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 }
 .main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1BoldText {
   font-weight: 500;
