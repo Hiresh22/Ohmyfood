@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -69,6 +72,7 @@ body header .LogoImg {
 body main {
   width: 375px;
   margin: auto;
+  font-family: Roboto;
   animation: mainblockVisibility 6s ease-out;
 }
 body main .Section_Location {
@@ -311,6 +315,7 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .Restaurants
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  font-family: Roboto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,6 +324,7 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .Restaurants
 }
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsText .RestaurantsNameText {
   margin-bottom: 5px;
+  font-family: Roboto;
 }
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsText .innerRestaurantsIcons {
   width: 30%;
@@ -356,6 +362,7 @@ body .footer {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
+  font-family: Roboto;
   display: flex;
   flex-direction: column;
 }

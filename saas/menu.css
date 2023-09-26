@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -66,9 +68,9 @@ header .LogoImg {
   flex-direction: row;
 }
 .main .MenuMainContainer .MenuBasille .MenuBasilleText {
-  font-size: x-large;
+  font-family: shrikhand;
+  font-size: X-large;
   font-weight: 900;
-  font-style: italic;
   padding-left: 20px;
   width: 70%;
 }
@@ -80,14 +82,27 @@ header .LogoImg {
   padding-right: 20px;
 }
 .main .MenuMainContainer .MenuEntrees {
+  font-family: roboto;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 .main .MenuMainContainer .MenuEntrees .childMenuEntreesText {
-  color: red;
+  font-weight: 500;
+  font-size: medium;
+  font-family: Roboto;
+  margin-bottom: 5px;
+}
+.main .MenuMainContainer .MenuEntrees .childMenuEntreesText:after {
+  content: "";
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 13%;
   margin-bottom: 10px;
+  border-bottom: 3px solid #99E2D0;
 }
 .main .MenuMainContainer .MenuEntrees .ParentMenu {
   display: flex;
@@ -141,8 +156,16 @@ header .LogoImg {
   justify-content: center;
   align-items: flex-start;
 }
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1BoldText {
+  font-weight: 500;
+  font-size: medium;
+  font-family: Roboto;
+}
 .main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1LigtText {
   margin-top: 5px;
+  font-weight: Roboto;
+  font-size: medium;
+  font-family: Roboto;
 }
 .main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Price {
   width: 30%;
@@ -219,6 +242,8 @@ header .LogoImg {
 .footer {
   width: 375px;
   margin: auto;
+  font-family: Roboto;
+  font-size: medium;
   background-color: rgba(14, 13, 13, 0.829);
   color: white;
   padding-left: 15px;
@@ -239,22 +264,18 @@ header .LogoImg {
 .footer .FooterChild2 {
   margin-top: 3px;
   margin-bottom: 3px;
-  font-size: small;
 }
 .footer .FooterChild3 {
   margin-top: 3px;
   margin-bottom: 3px;
-  font-size: small;
 }
 .footer .FooterChild4 {
   margin-top: 3px;
   margin-bottom: 3px;
-  font-size: small;
 }
 .footer .FooterChild5 {
   margin-top: 5px;
   margin-bottom: 20px;
-  font-size: small;
 }
 .footer .maillink {
   color: white;

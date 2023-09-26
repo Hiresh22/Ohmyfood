@@ -2,8 +2,9 @@
 @import './variables';
 @import './resets';
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&display=swap');
 
 
 @mixin flexBox($direction,$justifyContent,$alignitem)
@@ -34,7 +35,7 @@
   body
   {
       background-color:$backgound;
-     
+       
       
       .Pageloder
       {
@@ -110,7 +111,7 @@
             
             width: 375px;
             margin: auto;
-            
+            font-family: Roboto;
               
                 animation: mainblockVisibility 6s ease-out;
        
@@ -373,10 +374,12 @@
                                                      padding-top: 10px;
                                                     padding-left: 10px;
                                                     padding-right: 10px;
+                                                    font-family: Roboto;
                                                     @include flexBox(column,center,flex-start);
                                                     flex-wrap: wrap;
                                                     .RestaurantsNameText{
                                                         margin-bottom: 5px;
+                                                        font-family: Roboto;
                                                     }
                                                     
                                         }
@@ -446,6 +449,7 @@
                 padding-top: 10px;
                 padding-bottom: 10px;
                 display: flex;
+                font-family: Roboto;
                 @include flexBox(column,null,null);
                 
                 .FooterChild1

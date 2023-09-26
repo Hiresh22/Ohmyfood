@@ -1,5 +1,8 @@
 @import './variables';
 @import './resets';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;900&display=swap');
+
 
 
 @mixin flexBox($direction,$justifyContent,$alignitem)
@@ -83,10 +86,10 @@ header{
            display: flex;
            flex-direction: row; 
                .MenuBasilleText{
-                
+                font-family:$menuTitleFontFamily;
                 font-size:$menuTitleFont-fontSize;
                 font-weight: $menuTitleFont-fontWeight;
-                font-style: italic;
+               
                 
                 padding-left: 20px;
                    width: 70%;
@@ -101,12 +104,33 @@ header{
          }
 
          .MenuEntrees{
+            font-family: roboto;
             width:100%;
+            
             @include flexBox(column,flex-start,null);
                     .childMenuEntreesText{
-                     color:red;
-                     margin-bottom: 10px;
+
+                        font-weight:$submenuBoldTextFontWeight;
+                        font-size:$submenuBoldTextFontSize;
+                       font-family:$submenuBoldTextFontFamily;
+                        
+                        
+                     margin-bottom: 5px;
+                     
+                     
                     }
+
+                    .childMenuEntreesText:after {
+                        content: "";
+                        display: block;
+                        left: 0;
+                        bottom: 0;
+                        height: 5px;
+                        width: 13%;
+                        margin-bottom: 10px;
+                        border-bottom: 3px solid $Tertiary;
+                      }
+
                 .ParentMenu{
                     @include flexBox(column,flex-start,null);
                    
@@ -167,11 +191,23 @@ header{
                                 height: 100%;
                                 @include flexBox(row,flex-start,null);
                                    .MenuEntreesList1Text{
+                                    
                                      width: 80%;
                                      margin-left:10px;
                                      @include flexBox(column,center,flex-start);
+
+                                     .MenuEntreesList1BoldText{
+                                        font-weight:$submenuBoldTextFontWeight;
+                                     font-size:$submenuBoldTextFontSize;
+                                    font-family:$submenuBoldTextFontFamily;
+
+                                     }
                                      .MenuEntreesList1LigtText{
                                         margin-top: 5px;
+                                        font-weight:$submenuNormalTextFontFamily;
+                                        font-size:$submenuNormalTextFontSize;
+                                       font-family:$submenuNormalTextFontFamily;
+                                        
                                      }
                                    }
 
@@ -273,6 +309,8 @@ header{
         {
             width: 375px;
             margin: auto;
+            font-family: Roboto;
+            font-size: medium;
             background-color:$footerBackGroundColor;
             color:$footerTextColor;
             padding-left: 15px;
@@ -296,26 +334,27 @@ header{
             {
                 margin-top: 3px;
                 margin-bottom: 3px;
-                font-size: small;
+              
             }
 
             .FooterChild3
             {
                 margin-top: 3px;
                 margin-bottom: 3px;
-                font-size: small;
+               
+            
             }
             .FooterChild4
             {
                 margin-top: 3px;
                 margin-bottom: 3px;
-                font-size: small;
+                
             }
             .FooterChild5
             {
                 margin-top: 5px;
                 margin-bottom: 20px;
-                font-size: small;
+                
             }
 
 
