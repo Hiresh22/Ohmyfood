@@ -17,9 +17,10 @@
 
 
   @mixin circleIcon
-  {
-    height:15px;
-    width: 15px;
+  { position: relative;
+    left:-5px;
+    height:18px;
+    width: 18px;
     border:1px solid $Primary;
     border-radius:10px;
     background-color: $Primary;
@@ -171,6 +172,7 @@
                                        .circleIcon
                                         {
                                           @include  circleIcon;
+
                                         }
                                     }
                             .navMenu
@@ -370,7 +372,7 @@
                                     @include flexBox(row,null,null);
                                     flex-wrap: wrap;
                                         .innerRestaurantsText{
-                                                     width: 70%;
+                                                     width: 85%;
                                                      padding-top: 10px;
                                                     padding-left: 10px;
                                                     padding-right: 10px;
@@ -384,39 +386,43 @@
                                                     
                                         }
                                         .innerRestaurantsIcons{
-                                            width: 30%;
-                                            display: flex;
-                                            @include flexBox(column,center,flex-end);
+                                            width: 15%;
+                                            
                                             padding-right: 10px;
+                                            padding-left: 20px;
                                             
+                                            padding-top: 20px;    
                                             
-                                                 
-                                            .fa-regular{
-                                                display: flex;
-                                    
-                                                @include flexBox(column,center ,center);
-                                                
-                                                &:hover{
-                                                background-color: transparent;
-                                                animation: RegualareartBackgroundFill .5s forwards ease;
-                                                
-                                                }
-                                            .fa-solid{
-                                                
-                                               color:white;
-                                                &:hover 
-                                              {
-                                                
-                                                  visibility: visible;
-                                                  
-                                                  animation: heartBackgroundFill 3s forwards ease;
-                                                  
+                                            .top-heart {
+                                                     
+                                                position: relative;
+                                                top: -15px;
+                                                display: none;
+                                                width: 15px;
+                                                height: 15px;
+                                              
                                               }
-                                  
+                                              
+                                              .bottom-heart {
+                                                width: 15px;
+                                                height: 15px;
+                                              }
+                                              
+                                              .fa-heart {
+                                                transition-duration: 2s;
+                                                transition-property: color;
+                                                transition-timing-function: ease-out;
+                                              }
+                                              
+                                              .bottom-heart:hover + .top-heart {
+                                                display: block;
+                                                position: relative;
+                                               
+                                                color: #9356DC;
                                             
-                                           
-                                            }
-                                        }
+                                                
+                                              }
+                                              
 
 
                                             
