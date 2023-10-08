@@ -76,13 +76,31 @@ header .LogoImg {
 }
 .main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon {
   width: 30%;
-  display: flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-top: 18px;
-  padding-right: 20px;
+  position: relative;
+  padding-left: 60px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon .top-heart {
+  position: relative;
+  top: -15px;
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+.main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon .bottom-heart {
+  width: 15px;
+  height: 15px;
+}
+.main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon .fa-heart {
+  transition-duration: 2s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+.main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon .bottom-heart:hover + .top-heart {
+  display: block;
+  position: relative;
+  color: #9356DC;
 }
 .main .MenuMainContainer .MenuEntrees {
   font-family: roboto;
@@ -141,6 +159,7 @@ header .LogoImg {
   height: 60px;
   border-radius: 15px;
   margin-bottom: 15px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -171,7 +190,7 @@ header .LogoImg {
 }
 .main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .MenuEntreesList1Text .MenuEntreesList1LigtText {
   margin-top: 5px;
-  font-weight: Roboto;
+  font-weight: 300;
   font-size: medium;
   font-family: Roboto;
 }
@@ -201,25 +220,24 @@ header .LogoImg {
   width: 80px;
   background-color: #99E2D0;
   transform-origin: right 50%;
+  transition-duration: 3s;
+  transition-delay: 2s;
   animation-name: MenuHoverTransition;
   animation-duration: 1000ms;
 }
-.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark .fa-check {
+.main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList .MenuEntreesList1 .menuCheckmark .fa-circle-check {
+  color: white;
   background-color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: #99E2D0;
   animation-name: MenuHoverTransitionCheckmark;
-  animation-duration: 500ms;
+  animation-duration: 800ms;
 }
 .main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList:hover .menuCheckmark {
   visibility: visible;
-  display: inline;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,6 +322,14 @@ header .LogoImg {
   }
   100% {
     transform: ScaleX(1);
+  }
+}
+@keyframes MenuHoverTransitionReverse {
+  100% {
+    transform-origin: right 50%;
+  }
+  0% {
+    transform-origin: revert;
   }
 }
 @keyframes MenuHoverTransitionCheckmark {

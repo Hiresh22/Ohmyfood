@@ -96,10 +96,44 @@ header{
                 }   
                 .MenuBasilleHertIcon{
                     width: 30%;
-                    display: flex;
-                    @include flexBox(row,flex-end,flex-start);
-                    padding-top: 18px;
-                    padding-right: 20px;
+                    position: relative;
+                    
+                    padding-left: 60px;
+                    padding-top: 10px;
+                    overflow: hidden;
+
+
+                    .top-heart {
+                                                     
+                        position: relative;
+                        top: -15px;
+                        display: none;
+                        width: 15px;
+                        height: 15px;
+                      
+                      }
+                      
+                      .bottom-heart {
+                        width: 15px;
+                        height: 15px;
+                      }
+                      
+                      .fa-heart {
+                        transition-duration: 2s;
+                        transition-property: color;
+                        transition-timing-function: ease-out;
+                      }
+                      
+                      .bottom-heart:hover + .top-heart {
+                        display: block;
+                        position: relative;
+                       
+                        color: #9356DC;
+                    
+                        
+                      }
+                      
+
                 }
          }
 
@@ -185,7 +219,7 @@ header{
                         border-radius: 15px;
                         margin-bottom: 15px;
                         
-                        
+                        cursor: pointer;
                         @include flexBox(column,flex-start,null);
                                .MenuEntreesList1{
                                 height: 100%;
@@ -211,7 +245,7 @@ header{
                                         
                                        
                                         margin-top: 5px;
-                                        font-weight:$submenuNormalTextFontFamily;
+                                        font-weight:$submenuNormalTextFontWeight;
                                         font-size:$submenuNormalTextFontSize;
                                        font-family:$submenuNormalTextFontFamily;
                                         
@@ -223,7 +257,7 @@ header{
                                     width: 30%;
                                     position: relative;
                                     display: inline;
-                                   
+                                    
                                     @include flexBox(row,flex-end,end);
                                     
                                     
@@ -244,21 +278,24 @@ header{
                                         height: 100%;
                                         width: 80px;
                                         background-color: $menuHoverColor;
-                                        transform-origin: right 50%;
+                                        
+                                        transform-origin:right 50%;
+                                        transition-duration: 3s;
+                                        transition-delay: 2s;
                                         animation-name:MenuHoverTransition;
                                         animation-duration: 1000ms;   
-                                        .fa-check{
+                                        .fa-circle-check{
+                                            color: white;
                                             background-color: white;
-                                            width: 20px;
-                                            height: 20px;
-                                            border-radius: 10px;
+                                           
+                                            border-radius: 20px;
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
-                                            text-align: center;
+                                            
                                             color: $Tertiary;
                                             animation-name:MenuHoverTransitionCheckmark;
-                                            animation-duration: 500ms;
+                                            animation-duration: 800ms;
                                         }
 
                                     }
@@ -266,9 +303,12 @@ header{
                                }
 
                                &:hover {
+
+                                
                                 .menuCheckmark{
+                                    
                                     visibility: visible;
-                                    display: inline;
+                                    
                                      display: flex;
                                      flex-direction: column;
                                      justify-content: center;
@@ -394,6 +434,17 @@ header{
     100%{
         transform:ScaleX(1);
         
+    }   
+   }
+
+   @keyframes MenuHoverTransitionReverse {
+    100%{ 
+        transform-origin: right 50%;}
+        
+
+    0%{
+       
+        transform-origin: revert;
     }   
    }
 
