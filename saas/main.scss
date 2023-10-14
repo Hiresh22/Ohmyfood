@@ -85,7 +85,8 @@
                     {
                     
                         background-color: rgb(252, 254, 255);
-                        width: 375px;
+                        width: 90%;
+                        
                         margin:auto;
                         flex:auto;
                         @include flexBox(row,center,center);
@@ -110,11 +111,11 @@
         main
         {
             
-            width: 375px;
+            width:90%;
             margin: auto;
             font-family: Roboto;
               
-                animation: mainblockVisibility 6s ease-out;
+            animation: mainblockVisibility 6s ease-out;
        
             .Section_Location
             {   @include flexBox(row,center,center);
@@ -140,12 +141,12 @@
                         }
                     .navLinks
                         {
-                            @include flexBox(column,space-between,flex-start);
+                            @include flexBox(row,space-between,flex-start);
                             flex-wrap: wrap;
                     
                                 .navResturant
                                     {   
-                                        width:100%;
+                                        width:30%;
                                         height: 80px;
                                         border-radius: 30px;
                                         background-color: $MenuBackgourdColor;
@@ -181,7 +182,7 @@
                                     }
                             .navMenu
                             {
-                                width:100%;
+                                width:30%;
                                 height: 80px;
                                 border-radius: 30px;
                                 background-color: $MenuBackgourdColor;
@@ -215,7 +216,7 @@
                             }
                             .navEnjoyatResturant
                                 {
-                                    width:100%;
+                                    width:30%;
                                     height: 80px;
                                     border-radius: 30px;
                                     background-color: $MenuBackgourdColor;
@@ -321,8 +322,8 @@
                          
                  .ContainerRestaurantsCards{
 
-                            @include flexBox(column,space-between,flex-start);
-                          flex-wrap: wrap;
+                            @include flexBox(row,space-between,flex-start);
+                            flex-wrap: wrap;
                           
                                                    
                             
@@ -331,9 +332,9 @@
                           {
                                 width:340px;
                                 height: 245px;
-                                display: flex;
+                              
                                 @include flexBox(column,null,null);
-                               
+                                
                                 margin-bottom: 10px;
                                 background-color:white;
                                 border: white 2px;
@@ -344,7 +345,7 @@
                                     height: 30px;
                                     width:70px;
                                     text-align: center;
-                                    display: flex;
+                                    
                                     @include flexBox(row,center, center);
                                     background-color:$Tertiary;
                                     position: absolute;
@@ -464,7 +465,7 @@
 
             .footer
             {
-                width: 375px;
+                width: 90%;
                 margin: auto;
                 background-color:$footerBackGroundColor;
                 color:$footerTextColor;

@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 @media screen and (max-width :420px)
 {
     .header {
@@ -12,25 +18,27 @@
                 width: 100%
 
             }
-            main .Nav .navLinks
-            {
-                display: flex;
-                flex-direction:column;
-                height: auto;
+            body main .Nav .navLinks {
+             height: auto;
+             flex-direction: column;
+             justify-content: center;
+              flex-wrap: wrap;
+        
+
                
             }
 
-            main .Nav .navLinks .navResturant
+            body main .Nav .navLinks .navResturant
             {
                 width:100%;
 
             }
-            main .Nav .navLinks .navMenu{
+            body main .Nav .navLinks .navMenu{
                 width:100%;
 
             }
 
-            main .Nav .navLinks .navEnjoyatResturant
+            body main .Nav .navLinks .navEnjoyatResturant
             {
                 width:100%;
             }
@@ -50,4 +58,42 @@
             }
 
 
+}
+
+@media screen and (max-width:600px)
+{
+    body main .Nav .navLinks {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+         flex-wrap: wrap;
+   
+
+          
+       }
+
+       body main .Nav .navLinks .navResturant
+            {
+                width:100%;
+
+            }
+            body main .Nav .navLinks .navMenu{
+                width:100%;
+
+            }
+
+            body main .Nav .navLinks .navEnjoyatResturant
+            {
+                width:100%;
+            }
+}
+
+@media screen and (min-width :900px)
+{
+    body main .Restaurants .ContainerRestaurantsCards{
+        justify-content:space-between;
+        
+        
+        width: 100%;
+    }
 }

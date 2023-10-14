@@ -52,7 +52,7 @@ body .Pageloder .pageloaderext {
 }
 body header {
   background-color: rgb(252, 254, 255);
-  width: 375px;
+  width: 90%;
   margin: auto;
   flex: auto;
   display: flex;
@@ -70,7 +70,7 @@ body header .LogoImg {
   object-fit: cover;
 }
 body main {
-  width: 375px;
+  width: 90%;
   margin: auto;
   font-family: Roboto;
   animation: mainblockVisibility 6s ease-out;
@@ -98,13 +98,13 @@ body main .Nav .navText {
 }
 body main .Nav .navLinks {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 body main .Nav .navLinks .navResturant {
-  width: 100%;
+  width: 30%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -144,7 +144,7 @@ body main .Nav .navLinks .navResturant .circleIcon {
   align-items: center;
 }
 body main .Nav .navLinks .navMenu {
-  width: 100%;
+  width: 30%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -184,7 +184,7 @@ body main .Nav .navLinks .navMenu .circleIcon {
   align-items: center;
 }
 body main .Nav .navLinks .navEnjoyatResturant {
-  width: 100%;
+  width: 30%;
   height: 80px;
   border-radius: 30px;
   background-color: #F1F1F1;
@@ -278,7 +278,7 @@ body main .Restaurants .divTextRestuarants {
 }
 body main .Restaurants .ContainerRestaurantsCards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -286,7 +286,6 @@ body main .Restaurants .ContainerRestaurantsCards {
 body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards {
   width: 340px;
   height: 245px;
-  display: flex;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -298,7 +297,6 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .newRestuara
   height: 30px;
   width: 70px;
   text-align: center;
-  display: flex;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -372,7 +370,7 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards:hover {
   box-shadow: 1px 5px 2px #696969;
 }
 body .footer {
-  width: 375px;
+  width: 90%;
   margin: auto;
   background-color: rgba(14, 13, 13, 0.829);
   color: white;
