@@ -287,25 +287,43 @@ header .LogoImg {
   font-style: italic;
   font-weight: 700;
 }
+.footer .FooterChild1:hover {
+  color: #9356DC;
+}
 .footer .FooterChild2 {
   margin-top: 3px;
   margin-bottom: 3px;
+}
+.footer .FooterChild2:hover {
+  color: #9356DC;
 }
 .footer .FooterChild3 {
   margin-top: 3px;
   margin-bottom: 3px;
 }
+.footer .FooterChild3:hover {
+  color: #9356DC;
+}
 .footer .FooterChild4 {
   margin-top: 3px;
   margin-bottom: 3px;
+}
+.footer .FooterChild4:hover {
+  color: #9356DC;
 }
 .footer .FooterChild5 {
   margin-top: 5px;
   margin-bottom: 20px;
 }
+.footer .FooterChild5:hover {
+  color: #9356DC;
+}
 .footer .maillink {
   color: white;
   text-decoration: none;
+}
+.footer .maillink:hover {
+  color: #9356DC;
 }
 .footer .fa-utensils {
   margin-right: 10px;

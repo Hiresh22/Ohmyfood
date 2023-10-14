@@ -156,6 +156,10 @@
                                         &:hover
                                             {
                                                 background-color: #dfcce7;
+                                                .fa-mobile-screen-button
+                                                {
+                                                    color:#9356DC;
+                                                }
                                             }
                                         .divNavIconText
                                         {
@@ -188,6 +192,8 @@
                             &:hover
                                             {
                                                 background-color: #dfcce7;
+                                                .fa-list
+                                               {color:#9356DC;} 
                                             }
                             .divNavIconText
                              {
@@ -219,6 +225,10 @@
                                     &:hover
                                             {
                                                 background-color: #dfcce7;
+                                                .fa-store
+                                                {
+                                                    color:#9356DC;
+                                                }
                                             }
                                     .divNavIconText
                                     {
@@ -428,8 +438,15 @@
                                             
                                         }
                                 }
+
+                                &:hover{
+                                    box-shadow: 1px 5px 2px #696969; ;
+    
+                                }
                         
                             }
+
+                           
                     }
                        
                       
@@ -464,6 +481,11 @@
                     margin-bottom: 10px;
                     font-style: italic;
                     font-weight: 700;
+
+                    &:hover
+                {
+                    color:#9356DC;
+                }
                     
                 }
 
@@ -471,22 +493,40 @@
                 {
                     margin-top: 5px;
                     margin-bottom: 5px;
+
+                    &:hover
+                    {
+                        color:#9356DC;
+                    }
                 }
 
                 .FooterChild3
                 {
                     margin-top: 5px;
                     margin-bottom: 5px;
+                    &:hover
+                    {
+                        color:#9356DC;
+                    }
                 }
                 .FooterChild4
                 {
                     margin-top: 5px;
                     margin-bottom: 5px;
+                    &:hover
+                    {
+                        color:#9356DC;
+                    }
                 }
                 .FooterChild5
                 {
                     margin-top: 5px;
                     margin-bottom: 20px;
+                    &:hover
+                    {
+                        color:#9356DC;
+                    }
+
                 }
 
 
@@ -494,6 +534,10 @@
                 .maillink{
                     color: white;
                     text-decoration: none;
+                      &:hover
+                {
+                    color:#9356DC;
+                }
                 }
 
                 .fa-utensils{
@@ -506,6 +550,8 @@
                     margin-right:10px;
                     height: 10px;
                 }
+
+                
             }   
        
 

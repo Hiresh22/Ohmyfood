@@ -116,6 +116,9 @@ body main .Nav .navLinks .navResturant {
 body main .Nav .navLinks .navResturant:hover {
   background-color: #dfcce7;
 }
+body main .Nav .navLinks .navResturant:hover .fa-mobile-screen-button {
+  color: #9356DC;
+}
 body main .Nav .navLinks .navResturant .divNavIconText {
   display: flex;
   flex-direction: row;
@@ -153,6 +156,9 @@ body main .Nav .navLinks .navMenu {
 body main .Nav .navLinks .navMenu:hover {
   background-color: #dfcce7;
 }
+body main .Nav .navLinks .navMenu:hover .fa-list {
+  color: #9356DC;
+}
 body main .Nav .navLinks .navMenu .divNavIconText {
   display: flex;
   flex-direction: row;
@@ -188,6 +194,9 @@ body main .Nav .navLinks .navEnjoyatResturant {
 }
 body main .Nav .navLinks .navEnjoyatResturant:hover {
   background-color: #dfcce7;
+}
+body main .Nav .navLinks .navEnjoyatResturant:hover .fa-store {
+  color: #9356DC;
 }
 body main .Nav .navLinks .navEnjoyatResturant .divNavIconText {
   display: flex;
@@ -359,6 +368,9 @@ body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .Restaurants
   position: relative;
   color: #9356DC;
 }
+body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards:hover {
+  box-shadow: 1px 5px 2px #696969;
+}
 body .footer {
   width: 375px;
   margin: auto;
@@ -378,25 +390,43 @@ body .footer .FooterChild1 {
   font-style: italic;
   font-weight: 700;
 }
+body .footer .FooterChild1:hover {
+  color: #9356DC;
+}
 body .footer .FooterChild2 {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+body .footer .FooterChild2:hover {
+  color: #9356DC;
 }
 body .footer .FooterChild3 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+body .footer .FooterChild3:hover {
+  color: #9356DC;
+}
 body .footer .FooterChild4 {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+body .footer .FooterChild4:hover {
+  color: #9356DC;
 }
 body .footer .FooterChild5 {
   margin-top: 5px;
   margin-bottom: 20px;
 }
+body .footer .FooterChild5:hover {
+  color: #9356DC;
+}
 body .footer .maillink {
   color: white;
   text-decoration: none;
+}
+body .footer .maillink:hover {
+  color: #9356DC;
 }
 body .footer .fa-utensils {
   margin-right: 15px;

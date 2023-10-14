@@ -374,6 +374,10 @@ header{
                 margin-bottom: 15px;
                 font-style: italic;
                 font-weight: 700;
+                &:hover
+                {
+                    color:#9356DC;
+                }
                 
             }
 
@@ -381,26 +385,40 @@ header{
             {
                 margin-top: 3px;
                 margin-bottom: 3px;
-              
+                &:hover
+                {
+                    color:#9356DC;
+                }
             }
 
             .FooterChild3
             {
                 margin-top: 3px;
                 margin-bottom: 3px;
-               
+                &:hover
+                {
+                    color:#9356DC;
+                }
             
             }
             .FooterChild4
             {
                 margin-top: 3px;
                 margin-bottom: 3px;
+                &:hover
+                {
+                    color:#9356DC;
+                }
                 
             }
             .FooterChild5
             {
                 margin-top: 5px;
                 margin-bottom: 20px;
+                &:hover
+                {
+                    color:#9356DC;
+                }
                 
             }
 
@@ -409,6 +427,10 @@ header{
             .maillink{
                 color: white;
                 text-decoration: none;
+                &:hover
+                {
+                    color:#9356DC;
+                }
             }
 
             .fa-utensils{
