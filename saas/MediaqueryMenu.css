@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width :375px)
+@media screen and (max-width :420px)
 {
     header {
         width: 100%;
@@ -27,7 +27,7 @@
 
     .main .MenuMainContainer .MenuEntrees {
     justify-content: flex-start;
-    width: 375px;
+    width: 100%;
     }
 
     .main .MenuMainContainer .MenuEntrees .childMenuEntreesText 
@@ -57,4 +57,28 @@
          {
             width: 90%;
          }
+}
+
+
+@media screen and (max-width :648px)
+{
+    .main .MenuMainContainer .MenuEntrees {
+        justify-content: flex-start;
+        width: 100%;
+        }
+
+        .main .MenuMainContainer .MenuEntrees .childMenuEntreesText 
+    {  
+        width: 100%;
+       
+    }
+   
+    .main .MenuMainContainer .MenuEntrees .ParentMenu {
+    width: 100%;
+    
+    }
+    .main .MenuMainContainer .MenuEntrees .ParentMenu .childMenuEntreesList{
+        width: 100%;
+    }
+
 }

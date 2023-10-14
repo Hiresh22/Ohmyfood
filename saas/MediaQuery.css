@@ -52,7 +52,12 @@
                 background-color: #dfcce7;
               }
 
-            .ContainerRestaurantsCards
+              body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards
+              {
+                width: 90%;
+              }
+
+              body main .Restaurants .ContainerRestaurantsCards
             {
                 flex-direction: column;
             }
@@ -85,6 +90,15 @@
             body main .Nav .navLinks .navEnjoyatResturant
             {
                 width:100%;
+            }
+
+            body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards
+              {
+                width: 100%;
+              }
+              body main .Restaurants .ContainerRestaurantsCards .RestaurantsCards .RestaurantsImages .Rest_images {
+            width: 100%;
+            object-fit: cover;  
             }
 }
 
