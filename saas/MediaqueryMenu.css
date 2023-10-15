@@ -62,16 +62,29 @@
 
 @media screen and (max-width :648px)
 {
+    .main .MenuMainContainer .MenuBasille 
+         { width: 100%;
+           
+         }
     .main .MenuMainContainer .MenuBasille .MenuBasilleText{
-        width:60%;
+        width:40%;
         text-align: left;
+        
         
     }
     
     .main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon{
-        width:40%;
+        width:60%;
+       text-align: left;
+      
        
     }
+
+    .main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon .bottom-heart
+    {
+        margin-left: 80%;
+    }
+
     .main .MenuMainContainer .MenuEntrees {
         justify-content: flex-start;
         width: 100%;
