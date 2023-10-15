@@ -17,13 +17,15 @@
         .main .MenuMainContainer .MenuBasille .MenuBasilleText{
         width:60%;
         text-align: left;
-        
+        font-size: x-large;
     }
     
     .main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon{
         width:40%;
        
     }
+
+    
 
     .main .MenuMainContainer .MenuEntrees {
     justify-content: flex-start;
@@ -69,21 +71,21 @@
     .main .MenuMainContainer .MenuBasille .MenuBasilleText{
         width:40%;
         text-align: left;
+        font-size: x-large;
         
         
     }
     
     .main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon{
+        position: relative;
         width:60%;
-       text-align: left;
+        padding-left: 51%;
+        
       
        
     }
 
-    .main .MenuMainContainer .MenuBasille .MenuBasilleHertIcon .bottom-heart
-    {
-        margin-left: 90%;
-    }
+    
 
     .main .MenuMainContainer .MenuEntrees {
         justify-content: flex-start;
